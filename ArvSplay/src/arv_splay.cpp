@@ -9,18 +9,18 @@ arv_splay::arv_splay()
     raiz = NULL;
 }
 
-No* arv_splay::getRaiz()
+No_splay* arv_splay::getRaiz()
 {
     return raiz;
 }
 
-No* arv_splay::splaying(No* no, int val)
+No_splay* arv_splay::splaying(No_splay* no, int val)
 {
-    if(no == NULL)
+    if(no == NULL)//CONDICAO DE PARADA SE NAO ACHAR O VALOR
     {
         return NULL;
     }
-    if(no->getInfo() == val)
+    if(no->getInfo() == val)//CONDICAO DE PARADA SE ACHAR O NO
     {
         return no;
     }
@@ -43,18 +43,18 @@ No* arv_splay::splaying(No* no, int val)
     return no;
 }
 
-No* arv_splay::zagDir(No* no)
+No_splay* arv_splay::zagDir(No_splay* no)
 {
-    No* temp = no;
+    No_splay* temp = no;//NO UTILIZADO PARA AUXILIAR NA ROTACAO
     no = no->getEsq();
     temp->setEsq(no->getDir());
     no->setDir(temp);
     return no;
 }
 
-No* arv_splay::zigEsq(No* no)
+No_splay* arv_splay::zigEsq(No_splay* no)
 {
-    No* temp = no;
+    No_splay* temp = no;//NO UTILIZADO PARA AUXILIAR NA ROTACAO
     no = no->getDir();
     temp->setDir(no->getEsq());
     no->setEsq(temp);
@@ -66,11 +66,11 @@ void arv_splay::insere(int val)
     raiz = auxInsere(raiz, val);
 }
 
-No* arv_splay::auxInsere(No* no, int val)
+No_splay* arv_splay::auxInsere(No_splay* no, int val)
 {
     if(no == NULL)
     {
-        no = new No;
+        no = new No_splay;
         no->setInfo(val);
         no->setEsq(NULL);
         no->setDir(NULL);
@@ -87,7 +87,7 @@ void arv_splay::remove(int val)
 {
     if(auxBusca(raiz,val))
     {
-        No* aux = raiz;
+        No_splay* aux = raiz;
         if(aux->getEsq()!= NULL)
         {
             aux = aux->getEsq();
@@ -97,7 +97,7 @@ void arv_splay::remove(int val)
     }
 }
 
-No* arv_splay::auxRemove(No* no, int val)
+No_splay* arv_splay::auxRemove(No_splay* no, int val)
 {
     if(no == NULL)
         return NULL;
@@ -107,13 +107,24 @@ No* arv_splay::auxRemove(No* no, int val)
         no->setDir(auxRemove(no->getDir(), val));
     else
     {
-        if(no->getEsq() == NULL && no->getDir() == NULL)
-            no = removeFolha(no);
-        else if((no->getEsq() == NULL) || (no->getDir() == NULL))
-            no = removeUmFilho(no);
+        if(no->getEsq() == NULL && no->getDir() == NULL)//SE O NO FOR UMA FOLHA
+        {
+            delete no;
+            no = NULL;
+        }
+        else if((no->getEsq() == NULL) || (no->getDir() == NULL))//SE O NO TIVER UM FILHO
+        {
+            No_splay* aux;
+            if(no->getEsq() == NULL)
+                aux = no->getDir();
+            else
+                aux = no->getEsq();
+            delete no;
+            no = aux;
+        }
         else
         {
-            No *aux = menorSubArvDireita(no);
+            No_splay *aux = menorSubArvDireita(no);
             int auxC = aux->getInfo();
             no->setInfo(auxC);
             aux->setInfo(val);
@@ -123,47 +134,12 @@ No* arv_splay::auxRemove(No* no, int val)
     return no;
 }
 
-No* arv_splay::removeFolha(No* no)
+No_splay* arv_splay::menorSubArvDireita(No_splay* no)
 {
-    delete no;
-    return NULL;
-}
-
-No* arv_splay::removeUmFilho(No* no)
-{
-    No* aux;
-    if(no->getEsq() == NULL)
-        aux = no->getDir();
-    else
-        aux = no->getEsq();
-    delete no;
-    return aux;
-}
-
-No* arv_splay::menorSubArvDireita(No* no)
-{
-    No *aux = no->getDir();
+    No_splay *aux = no->getDir();
     while(aux->getEsq() != NULL)
         aux = aux->getEsq();
     return aux;
-}
-
-void arv_splay::imprime()
-{
-    imprimeporNivel(raiz,0);
-}
-
-void arv_splay::imprimeporNivel(No* no, int nivel)
-{
-    if (no != NULL)
-    {
-        cout << "(" << nivel << ")";
-        for(int i = 1; i <= nivel; i++)
-            cout << "--";
-        cout << no->getInfo() << endl;
-        imprimeporNivel(no->getEsq(), nivel+1);
-        imprimeporNivel(no->getDir(), nivel+1);
-    }
 }
 
 void arv_splay::busca(int val)
@@ -178,7 +154,7 @@ void arv_splay::busca(int val)
     }
 }
 
-bool arv_splay::auxBusca(No* no, int val)
+bool arv_splay::auxBusca(No_splay* no, int val)
 {
     if(no != NULL)
     {
@@ -213,7 +189,7 @@ bool arv_splay::auxBusca(No* no, int val)
     }
 }
 
-void arv_splay::printBT(const std::string& prefix, No *node, bool isRight)
+void arv_splay::printBT(const std::string& prefix, No_splay* node, bool isRight)
 {
     if( node != nullptr )
     {
@@ -230,7 +206,7 @@ void arv_splay::printBT(const std::string& prefix, No *node, bool isRight)
     }
 }
 
-void arv_splay::preOrder(No* root)
+void arv_splay::preOrder(No_splay* root)
 {
     if(root != NULL)
     {
@@ -239,6 +215,3 @@ void arv_splay::preOrder(No* root)
         preOrder(root->getDir());
     }
 }
-
-
-

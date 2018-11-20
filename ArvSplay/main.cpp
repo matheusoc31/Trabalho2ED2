@@ -6,30 +6,26 @@ using namespace std;
 
 int main()
 {
-    arv_splay arvoreS;
-    arvoreS.insere(10);
-    arvoreS.insere(20);
-    arvoreS.insere(30);
-    arvoreS.insere(25);
-    arvoreS.insere(5);
-    arvoreS.insere(15);
-    arvoreS.insere(50);
+    arv_splay arvS;
+    arvS.insere(10);
+    arvS.insere(20);
+    arvS.insere(30);
+    arvS.insere(25);
+    arvS.insere(5);
+    arvS.insere(15);
+    arvS.insere(50);
+    arvS.insere(12);
 
-    arvoreS.busca(20);
-    arvoreS.remove(25);
-
-
-
-
-    arvoreS.imprime();
+    arvS.busca(20);
+        arvS.remove(30);
 
 
 
-    cout << "Preorder traversal of the constructed AVL tree is " << endl;
-    arvoreS.preOrder(arvoreS.getRaiz());
+    cout << "Preorder traversal of the constructed SPLAY tree is " << endl;
+    arvS.preOrder(arvS.getRaiz());
 
     cout << "\nTree: " << endl;
-    arvoreS.printBT("", arvoreS.getRaiz(), false);
+    arvS.printBT("", arvS.getRaiz(), false);
 
     return 0;
 }

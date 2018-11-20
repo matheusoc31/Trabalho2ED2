@@ -34,9 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/No.h" />
+		<Unit filename="include/No_splay.h" />
 		<Unit filename="include/arv_splay.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/No_splay.cpp" />
 		<Unit filename="src/arv_splay.cpp" />
 		<Extensions>
 			<code_completion />
