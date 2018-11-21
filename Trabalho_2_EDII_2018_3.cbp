@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Trabalho_2_EDII_2018_3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Trabalho_2_EDII_2018_3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Trabalho_2_EDII_2018_3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="headers/AVLTree.h" />
+		<Unit filename="headers/AVLTreeModified.h" />
+		<Unit filename="headers/GastoDeputado.h" />
+		<Unit filename="headers/NoAVL.h" />
+		<Unit filename="headers/NoPatricia.h" />
+		<Unit filename="headers/PatriciaTree.h" />
+		<Unit filename="headers/RedBlackTree.h" />
+		<Unit filename="headers/Splay.h" />
+		<Unit filename="headers/libraries.h" />
+		<Unit filename="headers/util.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AVLTree.cpp" />
+		<Unit filename="src/AVLTreeModified.cpp" />
+		<Unit filename="src/GastoDeputado.cpp" />
+		<Unit filename="src/NoAVL.cpp" />
+		<Unit filename="src/RedBlackTree.cpp" />
+		<Unit filename="src/Splay.cpp" />
+		<Unit filename="src/util.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

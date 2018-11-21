@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1542674993 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/main.cpp
+	"./headers/libraries.h"
+
+1542555869 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/libraries.h
+	<iostream>
+	<string>
+	<cmath>
+	<vector>
+	<cstdlib>
+	<string>
+	<stdio.h>
+	<fstream>
+	<ctime>
+	"AVLTree.h"
+	"NoAVL.h"
+	"AVLTreeModified.h"
+	"RedBlackTree.h"
+	"Splay.h"
+	"GastoDeputado.h"
+	"util.h"
+
+1542670046 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/AVLTree.h
+	"GastoDeputado.h"
+	"NoAVL.h"
+
+1542469773 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/NoAVL.h
+	"GastoDeputado.h"
+
+1542466881 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/GastoDeputado.h
+
+1540405858 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/RedBlackTree.h
+
+1540405944 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/Splay.h
+
+1542632757 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/util.h
+	"GastoDeputado.h"
+
+1542675315 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTree.cpp
+	"../headers/libraries.h"
+
+1542466966 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/GastoDeputado.cpp
+	"../headers/libraries.h"
+
+1542589011 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/NoAVL.cpp
+	"../headers/libraries.h"
+
+1542322738 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/RedBlackTree.cpp
+	"../headers/libraries.h"
+
+1542322740 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/Splay.cpp
+	"../headers/libraries.h"
+
+1542632331 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/util.cpp
+	"../headers/libraries.h"
+
+1542674930 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/AVLTreeModified.h
+	"GastoDeputado.h"
+	"NoAVL.h"
+
+1542675395 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTreeModified.cpp
+	"../headers/libraries.h"
+

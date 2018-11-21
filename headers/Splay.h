@@ -1,0 +1,6 @@
+#ifndef SPLAY_H_INCLUDED
+#define SPLAY_H_INCLUDED
+
+
+
+#endif // SPLAY_H_INCLUDED
