@@ -23,8 +23,8 @@ private:
     No_splay* auxInsere(No_splay* no, int val);
     No_splay* auxRemove(No_splay* no, int val);
     bool auxBusca(No_splay* no, int val);
-    No_splay* zigEsq(No_splay* no);//FUNCAO PARA A ROTACAO SIMPLES
-    No_splay* zagDir(No_splay* no);//FUNCAO PARA A ROTACAO SIMPLES
+    No_splay* zig(No_splay* no);//FUNCAO PARA A ROTACAO SIMPLES
+    No_splay* zag(No_splay* no);//FUNCAO PARA A ROTACAO SIMPLES
     No_splay* menorSubArvDireita(No_splay *no);
 };
 

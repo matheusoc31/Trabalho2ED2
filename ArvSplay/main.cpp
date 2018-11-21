@@ -9,15 +9,15 @@ int main()
     arv_splay arvS;
     arvS.insere(10);
     arvS.insere(20);
-    arvS.insere(30);
-    arvS.insere(25);
     arvS.insere(5);
+    //arvS.insere(22);
+    /*arvS.insere(25);
     arvS.insere(15);
     arvS.insere(50);
     arvS.insere(12);
 
     arvS.busca(20);
-        arvS.remove(30);
+    arvS.remove(30);*/
 
 
 

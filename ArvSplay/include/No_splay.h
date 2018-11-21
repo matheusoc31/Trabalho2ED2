@@ -8,6 +8,7 @@ public:
     No_splay() ;
 
     void setInfo(int val);
+
     void setEsq(No_splay* p);
     void setDir(No_splay* p);
 

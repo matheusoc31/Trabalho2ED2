@@ -29,17 +29,17 @@
 	"arv_splay.h"
 	<cstdio>
 
-1542678363 source:c:\users\home\desktop\arvsplay\main.cpp
+1542821548 source:c:\users\home\desktop\arvsplay\main.cpp
 	<iostream>
 	"arv_splay.h"
 	<cstdio>
 
-1542678813 c:\users\home\desktop\arvsplay\include\arv_splay.h
+1542727537 c:\users\home\desktop\arvsplay\include\arv_splay.h
 	"No_splay.h"
 
 1542509871 c:\users\home\desktop\arvsplay\include\no.h
 
-1542678280 source:c:\users\home\desktop\arvsplay\src\arv_splay.cpp
+1542740088 source:c:\users\home\desktop\arvsplay\src\arv_splay.cpp
 	<iostream>
 	"arv_splay.h"
 	<cstdio>
@@ -47,5 +47,5 @@
 1542667811 source:c:\users\home\desktop\arvsplay\src\no_splay.cpp
 	"No_splay.h"
 
-1542667725 c:\users\home\desktop\arvsplay\include\no_splay.h
+1542821548 c:\users\home\desktop\arvsplay\include\no_splay.h
 

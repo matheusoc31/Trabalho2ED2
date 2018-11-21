@@ -14,22 +14,102 @@ No_splay* arv_splay::getRaiz()
     return raiz;
 }
 
+No_splay* arv_splay::zag(No_splay* no)
+{
+    /*
+    No_splay* temp = no->getDir();
+    No_splay* dir = no->getDir();
+
+    dir = temp->getEsq();
+    temp = temp->getEsq();
+    temp= no;
+    return no;
+    */
+    No_splay* temp = no->getEsq();//NO UTILIZADO PARA AUXILIAR NA ROTACAO
+    no->setEsq(temp->getDir());
+    temp->setDir(no);
+    return temp;
+}
+
+No_splay* arv_splay::zig(No_splay* no)
+{
+    /*
+     No_splay* temp = no->getEsq();//NO UTILIZADO PARA AUXILIAR NA ROTACAO
+     No_splay* esq = no->getEsq();
+
+     esq = temp->getDir();
+     temp = temp->getDir();
+     temp= no;
+     return no;
+     */
+
+    No_splay* temp = no->getDir();//NO UTILIZADO PARA AUXILIAR NA ROTACAO
+    no->setDir(temp->getEsq());
+    temp->setEsq(no);
+    return temp;
+
+}
+
 No_splay* arv_splay::splaying(No_splay* no, int val)
 {
-    if(no == NULL)//CONDICAO DE PARADA SE NAO ACHAR O VALOR
-    {
-        return NULL;
-    }
-    if(no->getInfo() == val)//CONDICAO DE PARADA SE ACHAR O NO
+     if(no == NULL || no->getInfo() == val)
+     {
+         return no;
+     }
+     No_splay* aux;
+     if (no->getInfo() > val)
+     {
+         if(no->getEsq()==NULL)
+             return no;
+         if(no->getEsq()->getInfo() > val)
+         {
+             aux = no->getEsq();
+             aux->setEsq(splaying(aux->getEsq(), val));
+             no = zig(no);
+         }
+         else if (no->getEsq()->getInfo() < val)
+         {
+             aux = no->getEsq();
+             aux->setDir(splaying(aux->getDir(),val));
+             if(aux->getDir() != NULL)
+                 no->setEsq(zag(no->getEsq()));
+         }
+         return (no->getEsq() == NULL)? no: zig(no);
+     }
+     else
+     {
+         if(no->getDir()==NULL)
+             return no;
+         if(no->getDir()->getInfo() >  val)
+         {
+             aux = no->getDir();
+             aux->setEsq(splaying(aux->getEsq(),val));
+             if(aux->getEsq() != NULL)
+             {
+                 no->setDir(zig(no->getDir()));
+             }
+         }
+         else if(no->getDir()->getInfo() < val)
+         {
+             aux = no->getDir();
+             aux->setDir(splaying(aux->getDir(), val));
+             no = zag(no);
+         }
+         return (no->getDir() == NULL)? no: zag(no);
+     }
+
+    /*
+    if(no==NULL || no->getInfo() == val)
     {
         return no;
     }
+
     if(val < no->getInfo())
     {
         if(no->getEsq() != NULL)
         {
             no->setEsq(splaying(no->getEsq(), val));
-            no = zagDir(no);
+            no = zag(no);
         }
     }
     if(val > no->getInfo())
@@ -37,28 +117,11 @@ No_splay* arv_splay::splaying(No_splay* no, int val)
         if(no->getDir() != NULL)
         {
             no->setDir(splaying(no->getDir(), val));
-            no = zigEsq(no);
+            no = zig(no);
         }
     }
     return no;
-}
-
-No_splay* arv_splay::zagDir(No_splay* no)
-{
-    No_splay* temp = no;//NO UTILIZADO PARA AUXILIAR NA ROTACAO
-    no = no->getEsq();
-    temp->setEsq(no->getDir());
-    no->setDir(temp);
-    return no;
-}
-
-No_splay* arv_splay::zigEsq(No_splay* no)
-{
-    No_splay* temp = no;//NO UTILIZADO PARA AUXILIAR NA ROTACAO
-    no = no->getDir();
-    temp->setDir(no->getEsq());
-    no->setEsq(temp);
-    return no;
+    */
 }
 
 void arv_splay::insere(int val)
@@ -68,6 +131,36 @@ void arv_splay::insere(int val)
 
 No_splay* arv_splay::auxInsere(No_splay* no, int val)
 {
+    if(no == NULL)
+    {
+        No_splay* aux = new No_splay;
+        aux->setInfo(val);
+        aux->setEsq(NULL);
+        aux->setDir(NULL);
+        return(aux);
+    }
+    no = splaying(no, val);
+
+    if(no->getInfo() == val)
+        return no;
+
+    No_splay* newNo = new No_splay;
+    newNo->setInfo(val);
+    newNo->setEsq(NULL);
+    newNo->setDir(NULL);
+
+    if(no->getInfo() > val) {
+        newNo->setDir(no);
+        newNo->setEsq(no->getEsq());
+        no->setEsq(NULL);
+    } else {
+        newNo->setEsq(no);
+        newNo->setDir(no->getDir());
+        no->setDir(NULL);
+    }
+    return newNo;
+
+    /*
     if(no == NULL)
     {
         no = new No_splay;
@@ -81,6 +174,8 @@ No_splay* arv_splay::auxInsere(No_splay* no, int val)
         no->setDir(auxInsere(no->getDir(), val));
     no = splaying(no, val);
     return no;
+    */
+
 }
 
 void arv_splay::remove(int val)
