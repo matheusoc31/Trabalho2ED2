@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1542947695 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\arv_vp\main.cpp
+	<iostream>
+	"Arv_VP.h"
+	<cstdio>
+
+1542947694 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\arv_vp\src\arv_vp.cpp
+	<bits/stdc++.h>
+	"Arv_VP.h"
+	<cstdio>
+	<iostream>
+
+1542947053 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\arv_vp\include\arv_vp.h
+	<iostream>
+	<cstdlib>
+	"No_VP.h"
+
+1542343886 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\arv_vp\include\no_vp.h
+
