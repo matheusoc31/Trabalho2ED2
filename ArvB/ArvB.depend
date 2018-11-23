@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1542937719 source:c:\users\home\desktop\arvb\main.cpp
+	<iostream>
+	"arv_B.h"
+	"No_B.h"
+
+1542937257 source:c:\users\home\desktop\arvb\src\arv_b.cpp
+	"arv_B.h"
+
+1542935259 c:\users\home\desktop\arvb\include\arv_b.h
+	"No_B.h"
+
+1542937257 source:c:\users\home\desktop\arvb\src\no_b.cpp
+	"No_B.h"
+	"iostream"
+
+1542934721 c:\users\home\desktop\arvb\include\no_b.h
+	<iostream>
+
