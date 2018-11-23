@@ -27,6 +27,7 @@ void AVLTree::deleteSubTree(NoAVL* rx) {
         deleteSubTree(rx->getRight());
 
     cout << "AVLTree: Deleting NoAVL " << rx << endl;
+    rx = NULL;
     delete rx;
     return;
 }

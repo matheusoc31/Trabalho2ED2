@@ -1,0 +1,2055 @@
+************************
+AVL
+
+************************
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000881s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11217
+
+Remoção Ordenada:Tempo de Remocao: 0.000499s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11208
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.003437s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55938
+
+Remoção Ordenada:Tempo de Remocao: 0.002367s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55916
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.005828s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111658
+
+Remoção Ordenada:Tempo de Remocao: 0.004491s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111595
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.027259s
+Número de comparações de chaves: 0
+Número de cópias de registros : 557833
+
+Remoção Ordenada:Tempo de Remocao: 0.021384s
+Número de comparações de chaves: 0
+Número de cópias de registros : 557027
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.052523s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1112715
+
+Remoção Ordenada:Tempo de Remocao: 0.042046s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1108646
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.254998s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5466672
+
+Remoção Ordenada:Tempo de Remocao: 0.204682s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5373904
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000954s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11107
+
+Remoção Ordenada:Tempo de Remocao: 0.000523s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11093
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.00322s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55700
+
+Remoção Ordenada:Tempo de Remocao: 0.002326s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55631
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.005899s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111267
+
+Remoção Ordenada:Tempo de Remocao: 0.004633s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111236
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.028367s
+Número de comparações de chaves: 0
+Número de cópias de registros : 555189
+
+Remoção Ordenada:Tempo de Remocao: 0.022069s
+Número de comparações de chaves: 0
+Número de cópias de registros : 554438
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.053123s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1107548
+
+Remoção Ordenada:Tempo de Remocao: 0.042133s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1105099
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.261049s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5438330
+
+Remoção Ordenada:Tempo de Remocao: 0.204798s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5355296
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000924s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11296
+
+Remoção Ordenada:Tempo de Remocao: 0.000534s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11290
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.003243s
+Número de comparações de chaves: 0
+Número de cópias de registros : 56146
+
+Remoção Ordenada:Tempo de Remocao: 0.002425s
+Número de comparações de chaves: 0
+Número de cópias de registros : 56095
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.005997s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112264
+
+Remoção Ordenada:Tempo de Remocao: 0.004612s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112203
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.028225s
+Número de comparações de chaves: 0
+Número de cópias de registros : 560865
+
+Remoção Ordenada:Tempo de Remocao: 0.021064s
+Número de comparações de chaves: 0
+Número de cópias de registros : 559947
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.05376s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1116470
+
+Remoção Ordenada:Tempo de Remocao: 0.041852s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1113383
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.260197s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5490994
+
+Remoção Ordenada:Tempo de Remocao: 0.206866s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5421405
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000912s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11245
+
+Remoção Ordenada:Tempo de Remocao: 0.000539s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11253
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.003397s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55994
+
+Remoção Ordenada:Tempo de Remocao: 0.002325s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55962
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.006227s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112187
+
+Remoção Ordenada:Tempo de Remocao: 0.004604s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112125
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.028123s
+Número de comparações de chaves: 0
+Número de cópias de registros : 560011
+
+Remoção Ordenada:Tempo de Remocao: 0.021619s
+Número de comparações de chaves: 0
+Número de cópias de registros : 559621
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.05413s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1117375
+
+Remoção Ordenada:Tempo de Remocao: 0.042041s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1115056
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.266581s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5505537
+
+Remoção Ordenada:Tempo de Remocao: 0.208438s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5415970
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001067s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11260
+
+Remoção Ordenada:Tempo de Remocao: 0.000534s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11258
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.00311s
+Número de comparações de chaves: 0
+Número de cópias de registros : 56214
+
+Remoção Ordenada:Tempo de Remocao: 0.002338s
+Número de comparações de chaves: 0
+Número de cópias de registros : 56225
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.005985s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112503
+
+Remoção Ordenada:Tempo de Remocao: 0.00462s
+Número de comparações de chaves: 0
+Número de cópias de registros : 112366
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.028032s
+Número de comparações de chaves: 0
+Número de cópias de registros : 561401
+
+Remoção Ordenada:Tempo de Remocao: 0.022276s
+Número de comparações de chaves: 0
+Número de cópias de registros : 560868
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.055243s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1119335
+
+Remoção Ordenada:Tempo de Remocao: 0.045024s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1116524
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.269105s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5503206
+
+Remoção Ordenada:Tempo de Remocao: 0.208191s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5401599
+
+******** NInsercao = 5000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001538s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13513
+
+Remoção Ordenada:Tempo de Remocao: 0.000738s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13501
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004949s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67673
+
+Remoção Ordenada:Tempo de Remocao: 0.003229s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67809
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.008836s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135244
+
+Remoção Ordenada:Tempo de Remocao: 0.006339s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135225
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.037713s
+Número de comparações de chaves: 0
+Número de cópias de registros : 674820
+
+Remoção Ordenada:Tempo de Remocao: 0.02721s
+Número de comparações de chaves: 0
+Número de cópias de registros : 673839
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.072711s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1344587
+
+Remoção Ordenada:Tempo de Remocao: 0.054784s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1341943
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.361235s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6641838
+
+Remoção Ordenada:Tempo de Remocao: 0.258634s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6566881
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001301s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13488
+
+Remoção Ordenada:Tempo de Remocao: 0.000759s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13479
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004063s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67601
+
+Remoção Ordenada:Tempo de Remocao: 0.003144s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67547
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.008075s
+Número de comparações de chaves: 0
+Número de cópias de registros : 134923
+
+Remoção Ordenada:Tempo de Remocao: 0.006273s
+Número de comparações de chaves: 0
+Número de cópias de registros : 134895
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.037054s
+Número de comparações de chaves: 0
+Número de cópias de registros : 674044
+
+Remoção Ordenada:Tempo de Remocao: 0.027008s
+Número de comparações de chaves: 0
+Número de cópias de registros : 673218
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.072208s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1344539
+
+Remoção Ordenada:Tempo de Remocao: 0.052353s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1341622
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.352418s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6637167
+
+Remoção Ordenada:Tempo de Remocao: 0.256024s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6558959
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001528s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13507
+
+Remoção Ordenada:Tempo de Remocao: 0.000876s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13490
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004606s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67595
+
+Remoção Ordenada:Tempo de Remocao: 0.003701s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67529
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.008493s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135340
+
+Remoção Ordenada:Tempo de Remocao: 0.005977s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135208
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.037812s
+Número de comparações de chaves: 0
+Número de cópias de registros : 676258
+
+Remoção Ordenada:Tempo de Remocao: 0.026897s
+Número de comparações de chaves: 0
+Número de cópias de registros : 675606
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.076646s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1348339
+
+Remoção Ordenada:Tempo de Remocao: 0.056459s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1345390
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.35545s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6660349
+
+Remoção Ordenada:Tempo de Remocao: 0.256952s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6589058
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001383s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13537
+
+Remoção Ordenada:Tempo de Remocao: 0.000858s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13515
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004499s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67699
+
+Remoção Ordenada:Tempo de Remocao: 0.003049s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67591
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.008141s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135595
+
+Remoção Ordenada:Tempo de Remocao: 0.006078s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135557
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.039737s
+Número de comparações de chaves: 0
+Número de cópias de registros : 676693
+
+Remoção Ordenada:Tempo de Remocao: 0.028394s
+Número de comparações de chaves: 0
+Número de cópias de registros : 675822
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.075084s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1349837
+
+Remoção Ordenada:Tempo de Remocao: 0.053284s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1346507
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.357926s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6669084
+
+Remoção Ordenada:Tempo de Remocao: 0.260014s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6603339
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001245s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13488
+
+Remoção Ordenada:Tempo de Remocao: 0.000749s
+Número de comparações de chaves: 0
+Número de cópias de registros : 13486
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004297s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67470
+
+Remoção Ordenada:Tempo de Remocao: 0.003177s
+Número de comparações de chaves: 0
+Número de cópias de registros : 67479
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.008625s
+Número de comparações de chaves: 0
+Número de cópias de registros : 135034
+
+Remoção Ordenada:Tempo de Remocao: 0.006643s
+Número de comparações de chaves: 0
+Número de cópias de registros : 134980
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.037747s
+Número de comparações de chaves: 0
+Número de cópias de registros : 674913
+
+Remoção Ordenada:Tempo de Remocao: 0.027398s
+Número de comparações de chaves: 0
+Número de cópias de registros : 674001
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.073112s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1345316
+
+Remoção Ordenada:Tempo de Remocao: 0.052491s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1341965
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.353371s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6642137
+
+Remoção Ordenada:Tempo de Remocao: 0.258356s
+Número de comparações de chaves: 0
+Número de cópias de registros : 6572504
+
+******** NInsercao = 10000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001576s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14538
+
+Remoção Ordenada:Tempo de Remocao: 0.000915s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14558
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.005543s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72678
+
+Remoção Ordenada:Tempo de Remocao: 0.003698s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72719
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.009857s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145541
+
+Remoção Ordenada:Tempo de Remocao: 0.006877s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145473
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.044633s
+Número de comparações de chaves: 0
+Número de cópias de registros : 726395
+
+Remoção Ordenada:Tempo de Remocao: 0.030195s
+Número de comparações de chaves: 0
+Número de cópias de registros : 725259
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.081661s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1448215
+
+Remoção Ordenada:Tempo de Remocao: 0.057974s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1445118
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.40032s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7163746
+
+Remoção Ordenada:Tempo de Remocao: 0.293163s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7095931
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001535s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14539
+
+Remoção Ordenada:Tempo de Remocao: 0.000907s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14525
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004968s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72781
+
+Remoção Ordenada:Tempo de Remocao: 0.003557s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72755
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.010027s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145386
+
+Remoção Ordenada:Tempo de Remocao: 0.007006s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145361
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.04327s
+Número de comparações de chaves: 0
+Número de cópias de registros : 725361
+
+Remoção Ordenada:Tempo de Remocao: 0.031558s
+Número de comparações de chaves: 0
+Número de cópias de registros : 724526
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.082s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1447041
+
+Remoção Ordenada:Tempo de Remocao: 0.057513s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1443434
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.402688s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7152579
+
+Remoção Ordenada:Tempo de Remocao: 0.280918s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7076208
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001515s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14527
+
+Remoção Ordenada:Tempo de Remocao: 0.000888s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14522
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.005256s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72933
+
+Remoção Ordenada:Tempo de Remocao: 0.004154s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72890
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.010335s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145707
+
+Remoção Ordenada:Tempo de Remocao: 0.007237s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145523
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.043113s
+Número de comparações de chaves: 0
+Número de cópias de registros : 727562
+
+Remoção Ordenada:Tempo de Remocao: 0.02984s
+Número de comparações de chaves: 0
+Número de cópias de registros : 726677
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.083021s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1451252
+
+Remoção Ordenada:Tempo de Remocao: 0.058062s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1448384
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.404854s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7172167
+
+Remoção Ordenada:Tempo de Remocao: 0.284098s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7095720
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.001672s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14549
+
+Remoção Ordenada:Tempo de Remocao: 0.000948s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14567
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.005157s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72837
+
+Remoção Ordenada:Tempo de Remocao: 0.003596s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72827
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.009913s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145637
+
+Remoção Ordenada:Tempo de Remocao: 0.007148s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145462
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.043697s
+Número de comparações de chaves: 0
+Número de cópias de registros : 727329
+
+Remoção Ordenada:Tempo de Remocao: 0.02984s
+Número de comparações de chaves: 0
+Número de cópias de registros : 726258
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.084034s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1450805
+
+Remoção Ordenada:Tempo de Remocao: 0.058785s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1447589
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.408372s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7171100
+
+Remoção Ordenada:Tempo de Remocao: 0.280173s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7099337
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.00182s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14480
+
+Remoção Ordenada:Tempo de Remocao: 0.000904s
+Número de comparações de chaves: 0
+Número de cópias de registros : 14503
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.004791s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72628
+
+Remoção Ordenada:Tempo de Remocao: 0.003723s
+Número de comparações de chaves: 0
+Número de cópias de registros : 72565
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.009761s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145279
+
+Remoção Ordenada:Tempo de Remocao: 0.006772s
+Número de comparações de chaves: 0
+Número de cópias de registros : 145261
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.041832s
+Número de comparações de chaves: 0
+Número de cópias de registros : 725418
+
+Remoção Ordenada:Tempo de Remocao: 0.02955s
+Número de comparações de chaves: 0
+Número de cópias de registros : 724543
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.082205s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1446082
+
+Remoção Ordenada:Tempo de Remocao: 0.057988s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1442687
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.397238s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7143056
+
+Remoção Ordenada:Tempo de Remocao: 0.284896s
+Número de comparações de chaves: 0
+Número de cópias de registros : 7072864
+
+******** NInsercao = 50000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002659s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16988
+
+Remoção Ordenada:Tempo de Remocao: 0.001423s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16955
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.00897s
+Número de comparações de chaves: 0
+Número de cópias de registros : 85009
+
+Remoção Ordenada:Tempo de Remocao: 0.005851s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84895
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.015723s
+Número de comparações de chaves: 0
+Número de cópias de registros : 170076
+
+Remoção Ordenada:Tempo de Remocao: 0.010707s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169774
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.069857s
+Número de comparações de chaves: 0
+Número de cópias de registros : 848533
+
+Remoção Ordenada:Tempo de Remocao: 0.041119s
+Número de comparações de chaves: 0
+Número de cópias de registros : 846472
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.133603s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1693603
+
+Remoção Ordenada:Tempo de Remocao: 0.07822s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1688188
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.643953s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8385285
+
+Remoção Ordenada:Tempo de Remocao: 0.34596s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8303353
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002567s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16966
+
+Remoção Ordenada:Tempo de Remocao: 0.001349s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16949
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.008668s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84538
+
+Remoção Ordenada:Tempo de Remocao: 0.005718s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84419
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.015178s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169164
+
+Remoção Ordenada:Tempo de Remocao: 0.010092s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169012
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.071203s
+Número de comparações de chaves: 0
+Número de cópias de registros : 844581
+
+Remoção Ordenada:Tempo de Remocao: 0.039744s
+Número de comparações de chaves: 0
+Número de cópias de registros : 842478
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.135688s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1685806
+
+Remoção Ordenada:Tempo de Remocao: 0.074577s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1681206
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.662718s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8342315
+
+Remoção Ordenada:Tempo de Remocao: 0.349515s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8262402
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002896s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16960
+
+Remoção Ordenada:Tempo de Remocao: 0.001378s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16911
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.009085s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84693
+
+Remoção Ordenada:Tempo de Remocao: 0.006084s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84549
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.016076s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169464
+
+Remoção Ordenada:Tempo de Remocao: 0.010617s
+Número de comparações de chaves: 0
+Número de cópias de registros : 168949
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.074578s
+Número de comparações de chaves: 0
+Número de cópias de registros : 846277
+
+Remoção Ordenada:Tempo de Remocao: 0.04006s
+Número de comparações de chaves: 0
+Número de cópias de registros : 844282
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.136443s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1688710
+
+Remoção Ordenada:Tempo de Remocao: 0.075214s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1682944
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.667532s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8355223
+
+Remoção Ordenada:Tempo de Remocao: 0.344369s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8270306
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002431s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16934
+
+Remoção Ordenada:Tempo de Remocao: 0.001366s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16914
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.00875s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84795
+
+Remoção Ordenada:Tempo de Remocao: 0.005938s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84653
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.015854s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169443
+
+Remoção Ordenada:Tempo de Remocao: 0.00998s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169266
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.073098s
+Número de comparações de chaves: 0
+Número de cópias de registros : 846256
+
+Remoção Ordenada:Tempo de Remocao: 0.043362s
+Número de comparações de chaves: 0
+Número de cópias de registros : 844566
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.144305s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1688326
+
+Remoção Ordenada:Tempo de Remocao: 0.079093s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1682821
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.665079s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8351293
+
+Remoção Ordenada:Tempo de Remocao: 0.342638s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8267828
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002755s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16910
+
+Remoção Ordenada:Tempo de Remocao: 0.001306s
+Número de comparações de chaves: 0
+Número de cópias de registros : 16897
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.009048s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84561
+
+Remoção Ordenada:Tempo de Remocao: 0.006005s
+Número de comparações de chaves: 0
+Número de cópias de registros : 84406
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.015728s
+Número de comparações de chaves: 0
+Número de cópias de registros : 169178
+
+Remoção Ordenada:Tempo de Remocao: 0.010296s
+Número de comparações de chaves: 0
+Número de cópias de registros : 168878
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.07196s
+Número de comparações de chaves: 0
+Número de cópias de registros : 844850
+
+Remoção Ordenada:Tempo de Remocao: 0.040444s
+Número de comparações de chaves: 0
+Número de cópias de registros : 842735
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.139034s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1685493
+
+Remoção Ordenada:Tempo de Remocao: 0.076577s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1680208
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.65814s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8340072
+
+Remoção Ordenada:Tempo de Remocao: 0.347514s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8259904
+
+******** NInsercao = 100000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002597s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17925
+
+Remoção Ordenada:Tempo de Remocao: 0.001506s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17912
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.009884s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89971
+
+Remoção Ordenada:Tempo de Remocao: 0.006667s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89696
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.01918s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179751
+
+Remoção Ordenada:Tempo de Remocao: 0.012099s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179244
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.092047s
+Número de comparações de chaves: 0
+Número de cópias de registros : 898283
+
+Remoção Ordenada:Tempo de Remocao: 0.048433s
+Número de comparações de chaves: 0
+Número de cópias de registros : 894939
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.187081s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1791900
+
+Remoção Ordenada:Tempo de Remocao: 0.086222s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1784019
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.896207s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8868399
+
+Remoção Ordenada:Tempo de Remocao: 0.375887s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8773891
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002956s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17963
+
+Remoção Ordenada:Tempo de Remocao: 0.001559s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17900
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.010792s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89680
+
+Remoção Ordenada:Tempo de Remocao: 0.006805s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89362
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.019662s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179448
+
+Remoção Ordenada:Tempo de Remocao: 0.01211s
+Número de comparações de chaves: 0
+Número de cópias de registros : 178945
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.096255s
+Número de comparações de chaves: 0
+Número de cópias de registros : 896278
+
+Remoção Ordenada:Tempo de Remocao: 0.046947s
+Número de comparações de chaves: 0
+Número de cópias de registros : 892968
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.186567s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1788247
+
+Remoção Ordenada:Tempo de Remocao: 0.085652s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1779934
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.90638s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8853398
+
+Remoção Ordenada:Tempo de Remocao: 0.377948s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8760847
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002927s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17956
+
+Remoção Ordenada:Tempo de Remocao: 0.001455s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17875
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.010895s
+Número de comparações de chaves: 0
+Número de cópias de registros : 90028
+
+Remoção Ordenada:Tempo de Remocao: 0.007071s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89801
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.019509s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179919
+
+Remoção Ordenada:Tempo de Remocao: 0.012151s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179420
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.096356s
+Número de comparações de chaves: 0
+Número de cópias de registros : 898104
+
+Remoção Ordenada:Tempo de Remocao: 0.046827s
+Número de comparações de chaves: 0
+Número de cópias de registros : 894886
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.187935s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1791618
+
+Remoção Ordenada:Tempo de Remocao: 0.085963s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1783528
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.914947s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8864465
+
+Remoção Ordenada:Tempo de Remocao: 0.379468s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8770474
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.002689s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17985
+
+Remoção Ordenada:Tempo de Remocao: 0.001455s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17920
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.010533s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89867
+
+Remoção Ordenada:Tempo de Remocao: 0.007006s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89586
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.019187s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179896
+
+Remoção Ordenada:Tempo de Remocao: 0.01222s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179359
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.097227s
+Número de comparações de chaves: 0
+Número de cópias de registros : 897591
+
+Remoção Ordenada:Tempo de Remocao: 0.048668s
+Número de comparações de chaves: 0
+Número de cópias de registros : 894218
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.189617s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1790685
+
+Remoção Ordenada:Tempo de Remocao: 0.086212s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1782704
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.918883s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8866418
+
+Remoção Ordenada:Tempo de Remocao: 0.37593s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8774595
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003026s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17972
+
+Remoção Ordenada:Tempo de Remocao: 0.00147s
+Número de comparações de chaves: 0
+Número de cópias de registros : 17912
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.010409s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89803
+
+Remoção Ordenada:Tempo de Remocao: 0.00698s
+Número de comparações de chaves: 0
+Número de cópias de registros : 89561
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.019434s
+Número de comparações de chaves: 0
+Número de cópias de registros : 179389
+
+Remoção Ordenada:Tempo de Remocao: 0.012277s
+Número de comparações de chaves: 0
+Número de cópias de registros : 178685
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.096623s
+Número de comparações de chaves: 0
+Número de cópias de registros : 896088
+
+Remoção Ordenada:Tempo de Remocao: 0.046782s
+Número de comparações de chaves: 0
+Número de cópias de registros : 892766
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.188403s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1788027
+
+Remoção Ordenada:Tempo de Remocao: 0.08572s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1780077
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.922868s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8854504
+
+Remoção Ordenada:Tempo de Remocao: 0.379154s
+Número de comparações de chaves: 0
+Número de cópias de registros : 8763596
+
+******** NInsercao = 500000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003185s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20531
+
+Remoção Ordenada:Tempo de Remocao: 0.00241s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20311
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.015429s
+Número de comparações de chaves: 0
+Número de cópias de registros : 102800
+
+Remoção Ordenada:Tempo de Remocao: 0.009913s
+Número de comparações de chaves: 0
+Número de cópias de registros : 101486
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.030639s
+Número de comparações de chaves: 0
+Número de cópias de registros : 205800
+
+Remoção Ordenada:Tempo de Remocao: 0.019009s
+Número de comparações de chaves: 0
+Número de cópias de registros : 203441
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.150477s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1027140
+
+Remoção Ordenada:Tempo de Remocao: 0.073427s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1014820
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.294213s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2048646
+
+Remoção Ordenada:Tempo de Remocao: 0.133647s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2022399
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 1.47739s
+Número de comparações de chaves: 0
+Número de cópias de registros : 10154586
+
+Remoção Ordenada:Tempo de Remocao: 0.49646s
+Número de comparações de chaves: 0
+Número de cópias de registros : 9983295
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003893s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20491
+
+Remoção Ordenada:Tempo de Remocao: 0.002861s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20245
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.016899s
+Número de comparações de chaves: 0
+Número de cópias de registros : 102361
+
+Remoção Ordenada:Tempo de Remocao: 0.011741s
+Número de comparações de chaves: 0
+Número de cópias de registros : 101217
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.032823s
+Número de comparações de chaves: 0
+Número de cópias de registros : 204606
+
+Remoção Ordenada:Tempo de Remocao: 0.020356s
+Número de comparações de chaves: 0
+Número de cópias de registros : 202139
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.189293s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1022470
+
+Remoção Ordenada:Tempo de Remocao: 0.083655s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1009803
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.317521s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2040355
+
+Remoção Ordenada:Tempo de Remocao: 0.130801s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2013602
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 1.5378s
+Número de comparações de chaves: 0
+Número de cópias de registros : 10111606
+
+Remoção Ordenada:Tempo de Remocao: 0.51214s
+Número de comparações de chaves: 0
+Número de cópias de registros : 9940903
+****** seed = -2084048536
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003418s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20462
+
+Remoção Ordenada:Tempo de Remocao: 0.002235s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20256
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.015507s
+Número de comparações de chaves: 0
+Número de cópias de registros : 102516
+
+Remoção Ordenada:Tempo de Remocao: 0.01021s
+Número de comparações de chaves: 0
+Número de cópias de registros : 101339
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.031196s
+Número de comparações de chaves: 0
+Número de cópias de registros : 204727
+
+Remoção Ordenada:Tempo de Remocao: 0.019369s
+Número de comparações de chaves: 0
+Número de cópias de registros : 202403
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.153916s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1023124
+
+Remoção Ordenada:Tempo de Remocao: 0.077265s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1010380
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.29959s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2041098
+
+Remoção Ordenada:Tempo de Remocao: 0.128557s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2015176
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 1.488s
+Número de comparações de chaves: 0
+Número de cópias de registros : 10115018
+
+Remoção Ordenada:Tempo de Remocao: 0.486478s
+Número de comparações de chaves: 0
+Número de cópias de registros : 9944678
+****** seed = 32608
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003536s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20532
+
+Remoção Ordenada:Tempo de Remocao: 0.002553s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20283
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.016166s
+Número de comparações de chaves: 0
+Número de cópias de registros : 102441
+
+Remoção Ordenada:Tempo de Remocao: 0.010479s
+Número de comparações de chaves: 0
+Número de cópias de registros : 101218
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.031562s
+Número de comparações de chaves: 0
+Número de cópias de registros : 204706
+
+Remoção Ordenada:Tempo de Remocao: 0.019715s
+Número de comparações de chaves: 0
+Número de cópias de registros : 202289
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.157495s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1023480
+
+Remoção Ordenada:Tempo de Remocao: 0.079433s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1010853
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.310952s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2042118
+
+Remoção Ordenada:Tempo de Remocao: 0.130779s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2015792
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 1.64845s
+Número de comparações de chaves: 0
+Número de cópias de registros : 10129963
+
+Remoção Ordenada:Tempo de Remocao: 0.550249s
+Número de comparações de chaves: 0
+Número de cópias de registros : 9960358
+****** seed = 15
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.003353s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20511
+
+Remoção Ordenada:Tempo de Remocao: 0.002243s
+Número de comparações de chaves: 0
+Número de cópias de registros : 20306
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.016702s
+Número de comparações de chaves: 0
+Número de cópias de registros : 102401
+
+Remoção Ordenada:Tempo de Remocao: 0.010307s
+Número de comparações de chaves: 0
+Número de cópias de registros : 101140
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.031184s
+Número de comparações de chaves: 0
+Número de cópias de registros : 204813
+
+Remoção Ordenada:Tempo de Remocao: 0.019488s
+Número de comparações de chaves: 0
+Número de cópias de registros : 202435
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.151222s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1022512
+
+Remoção Ordenada:Tempo de Remocao: 0.075319s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1010353
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.29988s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2041233
+
+Remoção Ordenada:Tempo de Remocao: 0.128615s
+Número de comparações de chaves: 0
+Número de cópias de registros : 2015280
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 1.47528s
+Número de comparações de chaves: 0
+Número de cópias de registros : 10115419
+
+Remoção Ordenada:Tempo de Remocao: 0.481515s
+Número de comparações de chaves: 0
+Número de cópias de registros : 9945572
+************************
+AVL
+
+************************
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000916s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11217
+
+Remoção Ordenada:
+Tempo de Remoção: 0.00051s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11208
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.002981s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55938
+
+Remoção Ordenada:
+Tempo de Remoção: 0.002316s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55916
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.005827s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111658
+
+Remoção Ordenada:
+Tempo de Remoção: 0.004466s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111595
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.026748s
+Número de comparações de chaves: 0
+Número de cópias de registros : 557833
+
+Remoção Ordenada:
+Tempo de Remoção: 0.020735s
+Número de comparações de chaves: 0
+Número de cópias de registros : 557027
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.052586s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1112715
+
+Remoção Ordenada:
+Tempo de Remoção: 0.041477s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1108646
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.255695s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5466672
+
+Remoção Ordenada:
+Tempo de Remoção: 0.205s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5373904
+****** seed = 0
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000918s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11107
+
+Remoção Ordenada:
+Tempo de Remoção: 0.000484s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11093
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.003312s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55700
+
+Remoção Ordenada:
+Tempo de Remoção: 0.002292s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55631
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.006478s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111267
+
+Remoção Ordenada:
+Tempo de Remoção: 0.004668s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111236
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.027816s
+Número de comparações de chaves: 0
+Número de cópias de registros : 555189
+
+Remoção Ordenada:
+Tempo de Remoção: 0.020946s
+Número de comparações de chaves: 0
+Número de cópias de registros : 554438
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.053059s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1107548
+
+Remoção Ordenada:
+Tempo de Remoção: 0.042378s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1105099
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.261868s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5438330
+
+Remoção Ordenada:
+Tempo de Remoção: 0.205955s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5355296
+****** seed = 1289892200
+
+***** NRemocao = 1000
+Remoção normal:
+Tempo de Remoção: 0.000866s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11114
+
+Remoção Ordenada:
+Tempo de Remoção: 0.000503s
+Número de comparações de chaves: 0
+Número de cópias de registros : 11099
+
+***** NRemocao = 5000
+Remoção normal:
+Tempo de Remoção: 0.003015s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55790
+
+Remoção Ordenada:
+Tempo de Remoção: 0.002353s
+Número de comparações de chaves: 0
+Número de cópias de registros : 55823
+
+***** NRemocao = 10000
+Remoção normal:
+Tempo de Remoção: 0.006211s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111355
+
+Remoção Ordenada:
+Tempo de Remoção: 0.004455s
+Número de comparações de chaves: 0
+Número de cópias de registros : 111253
+
+***** NRemocao = 50000
+Remoção normal:
+Tempo de Remoção: 0.026791s
+Número de comparações de chaves: 0
+Número de cópias de registros : 556256
+
+Remoção Ordenada:
+Tempo de Remoção: 0.020839s
+Número de comparações de chaves: 0
+Número de cópias de registros : 555420
+
+***** NRemocao = 100000
+Remoção normal:
+Tempo de Remoção: 0.052192s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1107230
+
+Remoção Ordenada:
+Tempo de Remoção: 0.040983s
+Número de comparações de chaves: 0
+Número de cópias de registros : 1104557
+
+***** NRemocao = 500000
+Remoção normal:
+Tempo de Remoção: 0.258187s
+Número de comparações de chaves: 0
+Número de cópias de registros : 5446674

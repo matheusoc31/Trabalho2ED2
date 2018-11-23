@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1542674993 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/main.cpp
+1542937839 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/main.cpp
 	"./headers/libraries.h"
 
 1542555869 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/libraries.h
@@ -36,7 +36,7 @@
 1542632757 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/util.h
 	"GastoDeputado.h"
 
-1542675315 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTree.cpp
+1542937345 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTree.cpp
 	"../headers/libraries.h"
 
 1542466966 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/GastoDeputado.cpp
@@ -58,6 +58,6 @@
 	"GastoDeputado.h"
 	"NoAVL.h"
 
-1542675395 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTreeModified.cpp
+1542937707 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTreeModified.cpp
 	"../headers/libraries.h"
 

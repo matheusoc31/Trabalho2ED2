@@ -1,0 +1,2042 @@
+************************
+AVL
+
+************************
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000309s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000271s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001381s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000619s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002635s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001087s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.008685s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004856s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.017262s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00948s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.086492s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.052258s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000369s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000143s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001139s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00054s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002001s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001067s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009005s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005052s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.018453s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009482s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.087842s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.050962s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000314s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000179s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001182s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000634s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002376s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001085s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009206s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005027s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.018014s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.010271s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.092148s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.051639s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000411s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000144s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.00123s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000585s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002132s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001088s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009434s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005522s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.018299s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009507s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.087572s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.051827s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000316s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000151s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001429s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000585s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002268s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001078s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009118s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005098s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.017483s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009864s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.085098s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.052743s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+******** NInsercao = 5000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000456s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000284s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001947s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000929s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003189s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001685s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.013414s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.006461s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.026292s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.011891s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.125407s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.061973s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000443s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000306s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001842s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00131s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003376s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001641s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.013496s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.006575s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.026136s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012701s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.124977s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.06173s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.00049s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000281s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001931s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000981s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003028s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001781s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.013727s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.006823s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.025906s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012969s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.132153s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.062327s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000497s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000287s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001959s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00096s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003291s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001652s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.013799s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.006657s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.02618s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012206s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.124945s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.062967s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000475s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000291s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001923s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001004s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003189s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001642s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.013286s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.006486s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.026522s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012103s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.126399s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.061917s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+******** NInsercao = 10000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000557s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000439s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.002233s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001161s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.00364s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002083s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.015842s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007971s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.029827s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.013504s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.143099s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.06716s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.0006s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000362s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.002086s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001333s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003654s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002138s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.015667s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007475s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.0305s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.013623s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.147492s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.068016s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000497s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000341s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.002148s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001217s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003691s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002087s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.016201s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007933s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.031402s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.01438s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.146559s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.066921s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000524s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000346s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.002341s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001276s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003964s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002029s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.015626s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007823s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.030779s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.01387s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.146278s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.067471s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000578s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000356s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.002112s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001206s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.003578s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002014s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.015957s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007566s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.030565s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.013715s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.146784s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.068567s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+******** NInsercao = 50000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001147s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000602s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004251s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002157s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.006941s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.003868s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.029153s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012491s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.057435s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.021072s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.283253s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.08527s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001017s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000624s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004172s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002135s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.007119s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.003993s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.030479s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012302s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.060339s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.021167s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.31048s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.084647s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001122s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000629s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004459s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002161s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.007555s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004209s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.031112s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012489s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.060859s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.021408s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.299857s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.08581s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001136s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000716s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.003751s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002175s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.007167s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.003709s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.031214s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.012542s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.061389s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.021297s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.304664s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.08489s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001176s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000614s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004401s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002123s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.007469s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004034s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.030781s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.01248s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.061712s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.021316s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.300991s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.085437s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+******** NInsercao = 100000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001178s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00076s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004894s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002407s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.008855s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004819s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.040468s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.016988s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.083981s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.028107s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.414844s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.096792s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001174s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000753s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.005171s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002765s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.008955s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004717s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.042212s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.016773s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.08519s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.02844s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.421451s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.099382s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001479s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000742s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004861s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00264s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.008801s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005196s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.042117s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.016912s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.085279s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.028372s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.424439s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.097252s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001267s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000746s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.00529s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002542s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.00884s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004779s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.044043s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.017196s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.085312s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.028586s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.422742s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.097605s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001479s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000753s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.004875s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.002558s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.008634s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004777s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.042239s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.016926s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.085183s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.029282s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.423213s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.097259s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+******** NInsercao = 500000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001254s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001089s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.007229s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004301s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.012706s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007627s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.064003s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.028715s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.129694s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.048761s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.648182s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.157301s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001507s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001501s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.006794s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004363s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.013615s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007988s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.065651s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.028977s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.131667s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.049218s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.649607s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.172285s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = -2084048536
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001348s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001217s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.007361s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004263s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.013145s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.007967s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.068913s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.029086s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.13722s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.049273s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.663538s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.155366s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 32608
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001589s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001234s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.008338s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004947s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.014767s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.008561s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.075663s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.030694s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.141595s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.050264s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.712884s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.161462s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001378s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001164s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.007095s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00416s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.013425s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.008128s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.065653s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.029673s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.130877s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.049337s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.651546s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.158532s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+************************
+AVL
+
+************************
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000208s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00018s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001446s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000779s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002117s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001069s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009141s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005151s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.017552s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009872s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.084528s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.051763s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000344s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000159s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001209s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000536s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.002254s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001046s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009303s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.004859s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.017913s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009281s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.085837s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.051265s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+****** seed = 1289892200
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000293s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00015s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.001245s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000563s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.001939s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001048s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.009203s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.005144s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.017718s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009315s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.0851s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0
+Busca Ordenada: 
+Tempo de busca ordenada: 0.050916s
+Número de comparações de chaves: 0
+Número de cópias de registros : 0

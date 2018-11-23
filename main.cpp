@@ -106,6 +106,7 @@ int main()
     getline(deputados, line);       // pulando o cabeçalho
     cout << line << endl;
     lineCount = 0;
+    cout << "Lendo conjunto de dados... ";
     while(getline(deputados, tableCell, ';')) {
 
         allDeputados[lineCount].setGastoId(lineCount+1);
@@ -143,6 +144,7 @@ int main()
     }
 
     deputados.close();
+    cout << "Leitura concluída." << endl;
 
 //    cout << "Preorder traversal of the constructed AVL tree is " << endl;
 //    preOrder(myAVL->getRaiz());
@@ -197,7 +199,7 @@ int main()
     entradaInsercao >> qtdNInsercao;
     NInsercao = new int[qtdNInsercao];
 
-    for(v = 0; j < qtdNInsercao; v++) {
+    for(v = 0; v < qtdNInsercao; v++) {
         entradaInsercao >> NInsercao[v];
     }
 
@@ -215,7 +217,7 @@ int main()
     entradaBusca >> qtdNBusca;
     NBusca = new int[qtdNBusca];
 
-    for(v = 0; j < qtdNBusca; v++) {
+    for(v = 0; v < qtdNBusca; v++) {
         entradaBusca >> NBusca[v];
     }
 
@@ -233,7 +235,7 @@ int main()
     entradaRemocao >> qtdNRemocao;
     NRemocao = new int[qtdNRemocao];
 
-    for(v = 0; j < qtdNRemocao; v++) {
+    for(v = 0; v < qtdNRemocao; v++) {
         entradaRemocao >> NRemocao[v];
     }
 
@@ -255,17 +257,15 @@ int main()
         case 5:
             treeName = "./Resultados/B";
             break;
-        default:
-            treeName = "FAILTREENAME";
-
     }
 
-    saidaInsercao.open("saidaInsercao.txt", ios::app);
-    saidaBusca.open("saidaBusca.txt", ios::app);
-    saidaRemocao.open("saidaRemocao.txt", ios::app);
+    saidaInsercao.open(treeName + "saidaInsercao.txt", ios::app);
+    saidaBusca.open(treeName + "saidaBusca.txt", ios::app);
+    saidaRemocao.open(treeName + "saidaRemocao.txt", ios::app);
 
     switch(ARVORE) {
         case 1:
+            cout << "** AVL **" << endl;
             saidaInsercao << "************************" << endl;
             saidaInsercao << "AVL\n" << endl;
             saidaInsercao << "************************" << endl;
@@ -277,6 +277,7 @@ int main()
             saidaRemocao << "************************" << endl;
             break;
         case 2:
+            cout << "** AVL Modificada **" << endl;
             saidaInsercao << "************************" << endl;
             saidaInsercao << "AVL Modificada\n" << endl;
             saidaInsercao << "************************" << endl;
@@ -323,34 +324,46 @@ int main()
              copiasRemocaoOrdenadaAVLMod[qtdNInsercao][qtdNBusca] = {0};
 
     for(i = 0; i < qtdNInsercao; i++) {
-        switch(ARVORE) {
-            case 1:
-                myAVL = new AVLTree;
-                myAVLAux = new AVLTree;
-                break;
-            case 2:
-                myAVLMod = new AVLTreeModified;
-                myAVLModAux = new AVLTreeModified;
-                break;
-            case 3:
-                /// vp
-                break;
-            case 4:
-                /// splay
-                break;
-            case 5:
-                /// b
-                break;
+        cout << "NInserção = " << NInsercao[i] << endl;
+        saidaInsercao << "\nNInsercao = " << NInsercao[i] << endl;
+        saidaBusca << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
+        saidaRemocao << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
 
-        }
         for(seedIdx = 0; seedIdx < nSeed; seedIdx++) {
+            cout << "seed = " << seedVec[seedIdx] << endl;
+            saidaInsercao << "****** seed = " << seedVec[seedIdx] << endl;
+            saidaBusca << "****** seed = " << seedVec[seedIdx] << endl;
+            saidaRemocao << "****** seed = " << seedVec[seedIdx] << endl;
+            switch(ARVORE) {
+                case 1:
+                    myAVL = new AVLTree;
+                    myAVLAux = new AVLTree;
+                    break;
+                case 2:
+                    myAVLMod = new AVLTreeModified;
+                    myAVLModAux = new AVLTreeModified;
+                    break;
+                case 3:
+                    /// vp
+                    break;
+                case 4:
+                    /// splay
+                    break;
+                case 5:
+                    /// b
+                    break;
+
+            }
             srand(seedVec[seedIdx]);
             gastoIdInseridos = new int[NInsercao[i]];
 
             /** 1.INSERÇÃO **/
+            cout << "Inserindo gasto_id's..." << endl;
             for(k = 0; k < NInsercao[i]; k++) {
                 gastoIdInseridos[k] = randomInt(0, nLines-1);
             }
+
+            cout << "Inserindo deputados... ";
             *comp = *copias = 0;
             startTime = clock();
             for(k = 0; k < NInsercao[i]; k++) {
@@ -374,19 +387,23 @@ int main()
             }
             endTime = clock();
             cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
-            timeInsercaoAVL[i] += (double) cpuTime/5; ///tempo gasto/numero de seeds (para calcular a media)
-            compInsercaoAVL[i] += (unsigned int) *copias/5; ///numero de comparacoes/numero de seeds (para calcular a media)
-            copiasInsercaoAVL[i] += (unsigned int) *copias/5; ///numero de copias /numero de seeds (para calcular a media)
+            timeInsercaoAVL[i] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
+            compInsercaoAVL[i] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+            copiasInsercaoAVL[i] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
             /// DESEMPENHO DA INSERÇÃO AQUI;
+            cout << "Deputados Inseridos." << endl;
 
-            saidaInsercao << "NInsercao = " << NInsercao[i] << endl;
-            saidaInsercao << "Tempo médio de inserção: " << timeInsercaoAVL[i] << endl;
-            saidaInsercao << "Número médio de comparações de chaves: " << compInsercaoAVL[i] << endl;
-            saidaInsercao << "Número médio de cópias de registros : " << copiasInsercaoAVL[i] << endl;
+//            saidaInsercao << "NInsercao = " << NInsercao[i] << endl;
+            saidaInsercao << "Tempo de inserção: " << cpuTime << "s" << endl;
+            saidaInsercao << "Número de comparações de chaves: " << *comp << endl;
+            saidaInsercao << "Número de cópias de registros : " << *copias << endl;
 
             /** 2.BUSCA **/
-            saidaBusca << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
+//            saidaBusca << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
             for(j = 0; j < qtdNBusca; j++) {
+
+                cout << "NBusca = " << NBusca[j] << endl;
+                cout << "Montando vetor de gasto_id's..." << endl;
                 gastoIdBuscaRemocao = new int[NBusca[j]];
                 propGastoArvore = NInsercao[i]/(NInsercao[i]+NBusca[j]); /// proporcao dos gasto_id's a serem gerados para a busca, que vão estar entre os gasto_id's inseridos
                 for(k = 0; k < NBusca[j]; k++) {
@@ -400,6 +417,7 @@ int main()
                         gastoIdBuscaRemocao[k] = randomInt(0, nLines-1);
                     }
                 }
+                cout << "Buscando deputados... ";
                 *comp = *copias = 0;
                 startTime = clock();
                 for(k = 0; k < NBusca[j]; k++) { /// BUSCA de fato
@@ -422,24 +440,29 @@ int main()
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
-                timeBuscaAVL[i][j] += (double) cpuTime/5; ///tempo gasto/numero de seeds (para calcular a media)
-                compBuscaAVL[i][j] += (unsigned int) *copias/5; ///numero de comparacoes/numero de seeds (para calcular a media)
-                copiasBuscaAVL[i][j] += (unsigned int) *copias/5; ///numero de copias /numero de seeds (para calcular a media)
+                timeBuscaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
+                compBuscaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                copiasBuscaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA BUSCA AQUI;
+                cout << "Busca concluída." << endl;
 
-                saidaBusca << "NBusca = " << NBusca[j] << endl;
-                saidaBusca << "Tempo médio de busca: " << timeBuscaAVL[i] << endl;
-                saidaBusca << "Número médio de comparações de chaves: " << compBuscaAVL[i] << endl;
-                saidaBusca << "Número médio de cópias de registros : " << copiasBuscaAVL[i] << endl;
+                saidaBusca << "\n***** NBusca = " << NBusca[j] << endl;
+                saidaBusca << "Busca normal:" << endl;
+                saidaBusca << "Tempo de busca: " << cpuTime << "s" << endl;
+                saidaBusca << "Número de comparações de chaves: " << *comp << endl;
+                saidaBusca << "Número de cópias de registros : " << *copias << endl;
 
                 /// DUPLICA 30% do vetor gastoIdBuscaRemocao:
+                cout << "Duplicando 30% do vetor de gasto_id's..." << endl;
                 idxDup = (int) NBusca[j]*0.7;
                 for(k = idxDup; k < NBusca[j]; k++) {
                     gastoIdBuscaRemocao[k] = gastoIdBuscaRemocao[k-idxDup];
                 }
                 /// ORDENA vetor gastoIdBuscaRemocao:
+                cout << "Ordenando vetor..." << endl;
                 ordena(gastoIdBuscaRemocao, NBusca[j], comp, copias);
 
+                cout << "Buscando deputados ordenados... ";
                 *comp = *copias = 0;
                 startTime = clock();
                 for(k = 0; k < NBusca[j]; k++) { /// BUSCA ORDENADA de fato
@@ -463,24 +486,44 @@ int main()
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
-                timeBuscaOrdenadaAVL[i][j] += (double) cpuTime/5; ///tempo gasto/numero de seeds (para calcular a media)
-                compBuscaOrdenadaAVL[i][j] += (unsigned int) *copias/5; ///numero de comparacoes/numero de seeds (para calcular a media)
-                copiasBuscaOrdenadaAVL[i][j] += (unsigned int) *copias/5; ///numero de copias /numero de seeds (para calcular a media)
+                timeBuscaOrdenadaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
+                compBuscaOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                copiasBuscaOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA BUSCA ORDENADA AQUI;
+                cout << "Busca concluída." << endl;
 
-                saidaBusca << "\nBusca Ordenada: " << endl;
-                saidaBusca << "NBusca = " << NBusca[j] << endl;
-                saidaBusca << "Tempo médio de busca ordenada: " << timeBuscaAVL[i] << endl;
-                saidaBusca << "Número médio de comparações de chaves: " << compBuscaAVL[i] << endl;
-                saidaBusca << "Número médio de cópias de registros : " << copiasBuscaAVL[i] << endl;
+                saidaBusca << "Busca Ordenada: " << endl;
+//                saidaBusca << "NBusca = " << NBusca[j] << endl;
+                saidaBusca << "Tempo de busca ordenada: " << cpuTime << "s" << endl;
+                saidaBusca << "Número de comparações de chaves: " << *comp << endl;
+                saidaBusca << "Número de cópias de registros : " << *copias << endl;
 
                 delete [] gastoIdBuscaRemocao;
             }
 
             /** 3.REMOÇÃO **/
-            saidaRemocao << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
-            *myAVLAux = *myAVL;
+//            saidaRemocao << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
+            switch(ARVORE) {
+                case 1:
+                    *myAVLAux = *myAVL;
+                    break;
+                case 2:
+                    *myAVLModAux = *myAVLMod;
+                    break;
+                case 3:
+                    /// vp
+                    break;
+                case 4:
+                    /// splay
+                    break;
+                case 5:
+                    /// b
+                    break;
+            }
             for(j = 0; j < qtdNRemocao; j++) {
+
+                cout << "NRemocao = " << NRemocao[j] << endl;
+                cout << "Montando vetor de gasto_id's... " << endl;
                 gastoIdBuscaRemocao = new int[NRemocao[j]];
                 propGastoArvore = NInsercao[i]/(NInsercao[i]+NRemocao[j]); /// proporcao dos gasto_id's a serem gerados para a remoção, que vão estar entre os gasto_id's inseridos
                 for(k = 0; k < NRemocao[j]; k++) {
@@ -494,6 +537,8 @@ int main()
                         gastoIdBuscaRemocao[k] = randomInt(0, nLines-1);
                     }
                 }
+
+                cout << "Removendo deputados... ";
                 *comp = *copias = 0;
                 startTime = clock();
                 for(k = 0; k < NRemocao[j]; k++) { /// REMOÇÃO de fato
@@ -517,15 +562,17 @@ int main()
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
-                timeRemocaoAVL[i][j] += (double) cpuTime/5; ///tempo gasto/numero de seeds (para calcular a media)
-                compRemocaoAVL[i][j] += (unsigned int) *copias/5; ///numero de comparacoes/numero de seeds (para calcular a media)
-                copiasRemocaoAVL[i][j] += (unsigned int) *copias/5; ///numero de copias /numero de seeds (para calcular a media)
+                timeRemocaoAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
+                compRemocaoAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                copiasRemocaoAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA REMOÇÃO AQUI;
+                cout << "Remoção concluída" << endl;
 
-                saidaRemocao << "NRemocao = " << NRemocao[j] << endl;
-                saidaRemocao << "Tempo médio de Remocao: " << timeRemocaoAVL[i] << endl;
-                saidaRemocao << "Número médio de comparações de chaves: " << compRemocaoAVL[i] << endl;
-                saidaRemocao << "Número médio de cópias de registros : " << copiasRemocaoAVL[i] << endl;
+                saidaRemocao << "\n***** NRemocao = " << NRemocao[j] << endl;
+                saidaRemocao << "Remoção normal:" << endl;
+                saidaRemocao << "Tempo de Remoção: " << cpuTime << "s" << endl;
+                saidaRemocao << "Número de comparações de chaves: " << *comp << endl;
+                saidaRemocao << "Número de cópias de registros : " << *copias << endl;
 
                 switch(ARVORE) {
                     case 1:
@@ -542,13 +589,16 @@ int main()
                         break;
                 }
                 /// DUPLICA 30% do vetor gastoIdBuscaRemocao:
+                cout << "Duplicando 30% do vetor de gasto_id's..." << endl;
                 idxDup = (int) NRemocao[j]*0.7;
                 for(k = idxDup; k < NRemocao[j]; k++) {
                     gastoIdBuscaRemocao[k] = gastoIdBuscaRemocao[k-idxDup];
                 }
                 /// ORDENA vetor gastoIdBuscaRemocao:
+                cout << "Ordenando vetor... " << endl;
                 ordena(gastoIdBuscaRemocao, NRemocao[j], comp, copias);
 
+                cout << "Removendo deputados ordenados... ";
                 *comp = *copias = 0;
                 startTime = clock();
                 for(k = 0; k < NBusca[j]; k++) { /// REMOÇÃO ORDENADA de fato
@@ -572,16 +622,17 @@ int main()
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
-                timeRemocaoOrdenadaAVL[i][j] += (double) cpuTime/5; ///tempo gasto/numero de seeds (para calcular a media)
-                compRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias/5; ///numero de comparacoes/numero de seeds (para calcular a media)
-                copiasRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias/5; ///numero de copias /numero de seeds (para calcular a media)
+                timeRemocaoOrdenadaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
+                compRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                copiasRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA REMOÇÃO ORDENADA AQUI;
+                cout << "Remoção concluída" << endl;
 
-                saidaRemocao << "\nRemoção Ordenada:";
-                saidaRemocao << "NRemocao = " << NRemocao[j] << endl;
-                saidaRemocao << "Tempo médio de Remocao: " << timeRemocaoAVL[i] << endl;
-                saidaRemocao << "Número médio de comparações de chaves: " << compRemocaoAVL[i] << endl;
-                saidaRemocao << "Número médio de cópias de registros : " << copiasRemocaoAVL[i] << endl;
+                saidaRemocao << "\nRemoção Ordenada:" << endl;
+//                saidaRemocao << "NRemocao = " << NRemocao[j] << endl;
+                saidaRemocao << "Tempo de Remoção: " << cpuTime << "s" << endl;
+                saidaRemocao << "Número de comparações de chaves: " << *comp << endl;
+                saidaRemocao << "Número de cópias de registros : " << *copias << endl;
 
                 switch(ARVORE) {
                     case 1:
@@ -603,19 +654,50 @@ int main()
 
             delete [] gastoIdInseridos;
             ///delete [] gastoIdBuscaRemocao;
+
+            switch(ARVORE) {
+                case 1:
+//                    myAVL->setRaiz(NULL);
+//                    myAVL = NULL;
+//                    myAVLAux->setRaiz(NULL);
+//                    myAVLAux = NULL;
+                    delete myAVL;
+                    delete myAVLAux;
+                    break;
+                case 2:
+//                    myAVLMod->setRaiz(NULL);
+//                    myAVLMod = NULL;
+//                    myAVLModAux->setRaiz(NULL);
+//                    myAVLModAux = NULL;
+                    delete myAVLMod;
+                    delete myAVLModAux;
+                    break;
+                case 3: /// vp
+                    break;
+                case 4: /// splay
+                    break;
+                case 5: /// b
+                    break;
+            }
         }
         /// ADICIONA ESTATISTICAS PARCIAIS
 
-        saidaInsercao.close();
-        saidaBusca.close();
-        saidaRemocao.close();
+        saidaInsercao << "\n*********************" << endl;
+        saidaInsercao << "NInsercao = " << NInsercao[i] << endl;
+        saidaInsercao << "Tempo médio de inserção: " << (double) timeInsercaoAVL[i]/5.0 << "s" << endl;
+        saidaInsercao << "Número médio de comparações de chaves: " << compInsercaoAVL[i]/5 << endl;
+        saidaInsercao << "Número médio de cópias de registros: " << copiasInsercaoAVL[i]/5 << endl;
+        saidaInsercao << "*********************\n" << endl;
 
-        delete myAVL;
-        delete myAVLAux;
+        /// delete myAVLAux;
         /// delete vp
         /// delete splay
         /// delete b
     }
+
+    saidaInsercao.close();
+    saidaBusca.close();
+    saidaRemocao.close();
 
     return 0;
 }
