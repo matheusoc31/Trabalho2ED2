@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1543094212 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\src\tst.cpp
+	"TST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543094234 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\include\tst.h
+	"NoTST.h"
+	<iostream>
+
+1543098866 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\include\notst.h
+
+1543116297 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1543116251 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543100305 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\include\arvtst.h
+	<iostream>
+	"NoTST.h"
+
