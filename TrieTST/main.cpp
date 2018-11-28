@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
+#include <ArvTST.h>
 
 using namespace std;
 
 int main()
 {
-    char* palavra;
-    cin >> palavra
-    cout << palavra+1;
+    ArvTST* arvT= new ArvTST();
     return 0;
 }

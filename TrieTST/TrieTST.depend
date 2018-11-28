@@ -48,3 +48,41 @@
 
 1543424339 /ice/Downloads/Trabalho2ED2-master/TrieTST/include/NoTST.h
 
+1543435342 source:c:\users\home\desktop\trabalho2ed2-master\trabalho2ed2-master\trietst\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
+
+1543435372 source:c:\users\home\desktop\trabalho2ed2-master\trabalho2ed2-master\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543435372 c:\users\home\desktop\trabalho2ed2-master\trabalho2ed2-master\trietst\include\arvtst.h
+	<iostream>
+	"NoTST.h"
+
+1543434679 c:\users\home\desktop\trabalho2ed2-master\trabalho2ed2-master\trietst\include\notst.h
+
+1543435459 source:c:\users\home\desktop\trietst\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
+
+1543435372 c:\users\home\desktop\trietst\include\arvtst.h
+	<iostream>
+	"NoTST.h"
+
+1543434679 c:\users\home\desktop\trietst\include\notst.h
+
+1543435741 source:c:\users\home\desktop\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+

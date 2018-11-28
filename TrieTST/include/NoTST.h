@@ -8,23 +8,26 @@ class NoTST
     public:
         NoTST(){};
         ~NoTST(){};
+
         NoTST* getEsq() {return esq;};
         void setEsq(NoTST* novo) {esq = novo;};
         NoTST* getDir() {return dir;};
         void setDir(NoTST* novo) {dir = novo;};
         NoTST* getMeio() {return meio;};
         void setMeio(NoTST* novo) {meio = novo;};
-        string getInfo() {return info;};
-        void setInfo(string novo) {info = novo;};
+        char getInfo() {return info;};
+        void setInfo(char novo) {info = novo;};
         bool getFim() {return fim;};
         void SetFim(bool novo) {fim = novo;};
         double getGasto() {return gasto;};
         void setGasto(double novo) {gasto = novo;};
+
+
     private:
         NoTST* esq;
         NoTST* dir;
         NoTST* meio;
-        string info;
+        char info;
         bool fim;
         double gasto;
 };
