@@ -8,7 +8,7 @@ using namespace std;
 
 ArvTST::ArvTST()
 {
-    //ctor
+    raiz = NULL;
 }
 
 ArvTST::~ArvTST()
@@ -21,9 +21,14 @@ void ArvTST::insere(string palavra)
     auxInsere(raiz, palavra);
 }
 
-NoTST* ArvTST::auxInsere(NoTST* no, string palavra)
+void ArvTST::auxInsere(NoTST* no, string palavra)
 {
-    if(busca2(palavra) == true)
+    if(!no)
+    {
+
+    }
+
+    /*if(busca2(palavra) == true)
     {
         cout << "Palavra ja existente" << endl;
     }
@@ -61,10 +66,10 @@ NoTST* ArvTST::auxInsere(NoTST* no, string palavra)
         else
             no->setDir(auxInsere(no->getDir(), palavra));
     }
-    return no;
+    return no;*/
 }
 
-NoTST* ArvTST::busca(string palavra)
+/*NoTST* ArvTST::busca(string palavra)
 {
     NoTST* novo = new NoTST();
     NoTST* auxiliar = new NoTST();
@@ -134,4 +139,4 @@ int ArvTST::retornaIndice(NoTST* no, string palavra)
         novo = auxBusca(novo, aux);
     }
     return i-1;
-}
+}*/

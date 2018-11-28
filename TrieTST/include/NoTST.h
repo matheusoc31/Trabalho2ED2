@@ -12,18 +12,21 @@ class NoTST
         void setEsq(NoTST* novo) {esq = novo;};
         NoTST* getDir() {return dir;};
         void setDir(NoTST* novo) {dir = novo;};
-        NoTST* getFilho() {return filho;};
-        void setFilho(NoTST* novo) {filho = novo;};
+        NoTST* getMeio() {return meio;};
+        void setMeio(NoTST* novo) {meio = novo;};
         string getInfo() {return info;};
         void setInfo(string novo) {info = novo;};
         bool getFim() {return fim;};
         void SetFim(bool novo) {fim = novo;};
+        double getGasto() {return gasto;};
+        void setGasto(double novo) {gasto = novo;};
     private:
         NoTST* esq;
         NoTST* dir;
-        NoTST* filho;
+        NoTST* meio;
         string info;
         bool fim;
+        double gasto;
 };
 
 #endif // NOTST_H

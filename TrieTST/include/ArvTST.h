@@ -13,14 +13,14 @@ class ArvTST
         NoTST* getRaiz();
         void setRaiz(NoTST* novo);
         void insere(string palavra);
-        NoTST* auxInsere(NoTST* no, string palavra);
         NoTST* busca(string palavra);
-        NoTST* auxBusca(NoTST* no, string palavra);
         bool busca2(string palavra);
-        bool auxBusca2(NoTST* no, string palavra);
-        int retornaIndice(NoTST* no, string palavra);
     private:
         NoTST* raiz;
+        bool auxBusca2(NoTST* no, string palavra);
+        NoTST* auxBusca(NoTST* no, string palavra);
+        void auxInsere(NoTST* no, string palavra);
+        int retornaIndice(NoTST* no, string palavra);
 };
 
 #endif // ARVTST_H
