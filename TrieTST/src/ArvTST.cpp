@@ -14,136 +14,51 @@ ArvTST::ArvTST()
 ArvTST::~ArvTST()
 {
 }
-/*
-void ArvTST::insere(string palavra)
+
+void ArvTST::insere(string palavra, double valor)
 {
-   auxInsere(raiz, palavra);
+    if(!busca(palavra))
+    {
+        auxInsere(raiz, palavra, 0, valor, 0);
+    }
 }
 
-void ArvTST::auxInsere(NoTST* no, string palavra)
+void ArvTST::auxInsere(NoTST* no, string palavra, int i, double valor, int tam)
 {
-   if(!no)
-   {
+    if(tam < palavra.size())
+    {
+        if(!no)
+        {
+            no->setInfo(palavra[i]);
+            no->setDir(NULL);
+            no->setEsq(NULL);
+            no->setMeio(NULL);
+            no->SetFim(false);
+        }
+        if(palavra[i] > no->getInfo())
+        {
+            auxInsere(no->getDir(), palavra,i, valor, tam);
+        }
+        else if(palavra[i] < no->getInfo())
+        {
+            auxInsere(no->getEsq(),palavra,i, valor, tam);
+        }
+        else
+        {
+            if(palavra[i] == no->getInfo())
+            {
+                auxInsere(no->getMeio(), palavra,i++, valor, tam++);
 
-   }
-
-  if(busca2(palavra) == true)
-   {
-       cout << "Palavra ja existente" << endl;
-   }
-   else
-   {
-       no = auxBusca(no, palavra); /// AQUI...
-       int indice = retornaIndice(raiz,palavra);
-       for(int i=indice;i<palavra.size();i++)
-       {
-           while()
-           if((int)no->getInfo()[0] < palavra[o])
-           {
-               no = no->getDir();
-           }
-           novo = new NoTST();
-           no->setDir(NULL);
-           no->setEsq(NULL);
-           no->setFilho(NULL);
-           no->setInfo(palavra);
-       }
-   }
-
-   if(no == NULL)
-   {
-       no = new NoTST();
-       no->setDir(NULL);
-       no->setEsq(NULL);
-       no->setFilho(NULL);
-       no->setInfo(palavra);
-   }
-   else
-   {
-       if((int)no->getInfo()[0] > (int)palavra[0])
-           no->setEsq(auxInsere(no->getEsq(), palavra));
-       else
-           no->setDir(auxInsere(no->getDir(), palavra));
-   }
-   return no;
+            }
+            else
+            {
+                no->SetFim(true);
+                no->setGasto(valor);
+            }
+        }
+    }
 }
 
-NoTST* ArvTST::busca(string palavra)
-{
-   NoTST* novo = new NoTST();
-   NoTST* auxiliar = new NoTST();
-   novo = raiz;
-   string aux;
-   for(int i=0;i<palavra.size() && novo != NULL;i++)
-   {
-       aux = palavra[i];
-       auxiliar = novo;
-       novo = auxBusca(novo, aux);
-   }
-   return auxiliar;
-}
-
-NoTST* ArvTST::auxBusca(NoTST* no, string palavra)
-{
-   if (no == NULL)
-       return NULL;
-   else if ((int)no->getInfo()[0] == (int)palavra[0])
-       return no->getFilho();
-   else if ((int)no->getInfo()[0] < (int)palavra[0])
-       return no->getDir();
-   else
-       return no->getEsq();
-}
-
-
-
-bool ArvTST::busca2(string palavra)
-{
-   NoTST* novo = new NoTST();
-   NoTST* auxiliar = new NoTST();
-   novo = raiz;
-   string aux;
-   for(int i=0;i<palavra.size() && novo != NULL;i++)
-   {
-       aux = palavra[i];
-       if(auxBusca2(novo, aux) == false)
-       {
-           return false;
-       }
-       auxiliar = novo;
-       novo = novo->getFilho();
-   }
-   if(auxiliar->getFim() == false)
-   {
-       auxiliar->SetFim(true);
-   }
-   return true;
-}
-
-bool ArvTST::auxBusca2(NoTST* no, string palavra)
-{
-   if ((int)no->getInfo()[0] == (int)palavra[0])
-       return true;
-   else
-       return false;
-}
-
-
-
-int ArvTST::retornaIndice(NoTST* no, string palavra)
-{
-   NoTST* novo = new NoTST();
-   novo = raiz;
-   string aux;
-   int i=0;
-   for(;i<palavra.size() && novo != NULL;i++)
-   {
-       aux = palavra[i];
-       novo = auxBusca(novo, aux);
-   }
-   return i-1;
-}
-*/
 
 bool ArvTST::busca(string palavra)
 {
@@ -169,7 +84,7 @@ bool ArvTST::auxBusca(NoTST* no, string palavra, int i)
             return auxBusca(no->getDir(),palavra,i);
         else
         {
-                return auxBusca(no->getMeio(),palavra,i++);
+            return auxBusca(no->getMeio(),palavra,i++);
         }
     }
 }

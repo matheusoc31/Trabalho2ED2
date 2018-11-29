@@ -6,7 +6,7 @@
 	<cstring>
 	<sstream>
 
-1543094234 
+1543435459 
 
 1543094234 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\include\tst.h
 	"NoTST.h"
@@ -80,6 +80,25 @@
 1543434679 c:\users\home\desktop\trietst\include\notst.h
 
 1543435741 source:c:\users\home\desktop\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543517703 source:/ice/Downloads/Trabalho2ED2-master/TrieTST/main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
+
+1543517997 /ice/Downloads/Trabalho2ED2-master/TrieTST/include/ArvTST.h
+	<iostream>
+	"NoTST.h"
+
+1543435879 /ice/Downloads/Trabalho2ED2-master/TrieTST/include/NoTST.h
+
+1543517997 source:/ice/Downloads/Trabalho2ED2-master/TrieTST/src/ArvTST.cpp
 	"ArvTST.h"
 	<iostream>
 	<cstdlib>

@@ -13,8 +13,8 @@ public:
 
     NoTST* getRaiz();
     void setRaiz(NoTST* novo);
+    void insere(string palavra, double valor);
     /*
-    void insere(string palavra);
     NoTST* busca(string palavra);
     bool busca2(string palavra);
     */
@@ -23,10 +23,10 @@ public:
 
 private:
     NoTST* raiz;
+    void auxInsere(NoTST* no, string palavra, int i, double valor, int tam);
     /*
     bool auxBusca2(NoTST* no, string palavra);
     NoTST* auxBusca(NoTST* no, string palavra);
-    void auxInsere(NoTST* no, string palavra);
     int retornaIndice(NoTST* no, string palavra);
     */
 

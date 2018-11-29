@@ -7,6 +7,11 @@ using namespace std;
 
 int main()
 {
-    ArvTST* arvT= new ArvTST();
+    ArvTST arvT;
+    string frase = "botafogo";
+    arvT.insere(frase, 0.0);
+
+
+
     return 0;
 }
