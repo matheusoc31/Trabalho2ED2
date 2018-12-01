@@ -97,19 +97,19 @@
 	<cstring>
 	<sstream>
 
-1543687322 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\main.cpp
+1543691954 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\main.cpp
 	<iostream>
 	<string.h>
 	<stdio.h>
 	<ArvTST.h>
 
-1543643356 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\include\arvtst.h
+1543690375 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\include\arvtst.h
 	<iostream>
 	"NoTST.h"
 
 1543635257 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\include\notst.h
 
-1543687773 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\src\arvtst.cpp
+1543691944 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trabalho2ed2-master 30-11\trietst\src\arvtst.cpp
 	"ArvTST.h"
 	<iostream>
 	<cstdlib>

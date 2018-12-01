@@ -125,21 +125,17 @@ bool ArvTST::busca(string palavra)
         }
         else if(getRaiz()->getInfo()==palavra[0])
         {
-            auxBusca(getRaiz()->getMeio(),palavra,1);
+            return auxBusca(getRaiz()->getMeio(),palavra,1);
         }
         else if(getRaiz()->getInfo()>palavra[0])
         {
-            auxBusca(getRaiz()->getEsq(),palavra,0);
+            return auxBusca(getRaiz()->getEsq(),palavra,0);
         }
         else if(getRaiz()->getInfo()<palavra[0])
         {
-            auxBusca(getRaiz()->getDir(), palavra,0);
+            return auxBusca(getRaiz()->getDir(), palavra,0);
         }
     }
-
-
-
-    //return auxBusca(raiz,palavra,0);
 }
 
 bool ArvTST::auxBusca(NoTST* no, string palavra, int i)
@@ -156,52 +152,31 @@ bool ArvTST::auxBusca(NoTST* no, string palavra, int i)
             {
                 if(i == palavra.size()-1)
                 {
-                    return true;
+                    if(no->getFim())
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
-                return auxBusca(no->getMeio(),i++);
+                return auxBusca(no->getMeio(),palavra,i+1);
             }
-            if(no->getInfo()palavra[0])
+            if(no->getInfo()>palavra[0])
             {
-                if(i == palavra.size()-1)
-                {
-                    return true;
-                }
-                auxBusca(no->getEsq(),palavra,0);
+                return auxBusca(no->getEsq(),palavra,i);
             }
             else if(no->getInfo()<palavra[0])
             {
-                if(i == palavra.size()-1)
-                {
-                    return true;
-                }
-                auxBusca(no->getDir(), palavra,0);
+                return auxBusca(no->getDir(), palavra,0);
             }
+            return false;
         }
     }
-
-
-
-
-
-    if(no->getFim()== true)
-    {
-        return true;
-    }
-    if(no == NULL)
-    {
-        return false;
-    }
-
-    if(no->getInfo() < palavra[i])
-        return auxBusca(no->getEsq(),palavra,i);
     else
     {
-        if(no->getInfo()> palavra[i])
-            return auxBusca(no->getDir(),palavra,i);
-        else
-        {
-            return auxBusca(no->getMeio(),palavra,i++);
-        }
+        return false;
     }
 }
 
