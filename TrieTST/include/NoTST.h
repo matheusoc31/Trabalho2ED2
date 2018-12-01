@@ -6,9 +6,14 @@ using namespace std;
 class NoTST
 {
     public:
-        NoTST(){};
+        NoTST(char letra){
+        setDir(NULL);
+        setEsq(NULL);
+        setMeio(NULL);
+        SetFim(false);
+        setInfo(letra);
+        };
         ~NoTST(){};
-
         NoTST* getEsq() {return esq;};
         void setEsq(NoTST* novo) {esq = novo;};
         NoTST* getDir() {return dir;};
@@ -21,7 +26,6 @@ class NoTST
         void SetFim(bool novo) {fim = novo;};
         double getGasto() {return gasto;};
         void setGasto(double novo) {gasto = novo;};
-
 
     private:
         NoTST* esq;

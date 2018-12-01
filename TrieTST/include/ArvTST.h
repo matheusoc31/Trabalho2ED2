@@ -10,27 +10,16 @@ class ArvTST
 public:
     ArvTST();
     ~ArvTST();
-
-    NoTST* getRaiz();
-    void setRaiz(NoTST* novo);
-    void insere(string palavra, double valor);
-    /*
-    NoTST* busca(string palavra);
-    bool busca2(string palavra);
-    */
+    NoTST* getRaiz(){return raiz;};
+    void setRaiz(NoTST* novo){raiz=novo;};
+    void insere(string palavra);
     bool busca(string palavra);
-
-
+    void imprime();
 private:
     NoTST* raiz;
-    void auxInsere(NoTST* no, string palavra, int i, double valor, int tam);
-    /*
-    bool auxBusca2(NoTST* no, string palavra);
-    NoTST* auxBusca(NoTST* no, string palavra);
-    int retornaIndice(NoTST* no, string palavra);
-    */
-
+    void auxInsere(NoTST* no, string palavra, int i);
     bool auxBusca(NoTST* no, string palavra,int i);
+    void auxImprime(NoTST* raiz);
 };
 
 #endif // ARVTST_H

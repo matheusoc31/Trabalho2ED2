@@ -8,10 +8,11 @@ using namespace std;
 int main()
 {
     ArvTST arvT;
-    string frase = "botafogo";
-    arvT.insere(frase, 0.0);
-
-
-
+    string frase = "ba";
+    arvT.insere(frase);
+    if(arvT.busca("ba"))
+    {
+        cout << "Achou";
+    }
     return 0;
 }
