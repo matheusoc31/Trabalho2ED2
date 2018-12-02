@@ -3,6 +3,7 @@
 GastoDeputado::GastoDeputado() {}
 
 GastoDeputado::GastoDeputado(
+        int gasto_id,
         string buggedDate,
         string receiptDate,
         int deputyId,
@@ -13,7 +14,7 @@ GastoDeputado::GastoDeputado(
         string receiptDescription,
         string establishmentName,
         int receiptValue) {
-
+    this->gasto_id = gasto_id;
     this->buggedDate = buggedDate;
     this->receiptDate = receiptDate;
     this->deputyId = deputyId;

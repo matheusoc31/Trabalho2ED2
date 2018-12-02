@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1542937839 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/main.cpp
+1543169733 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/main.cpp
 	"./headers/libraries.h"
 
-1542555869 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/libraries.h
+1543155548 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/libraries.h
 	<iostream>
 	<string>
 	<cmath>
@@ -12,22 +12,28 @@
 	<stdio.h>
 	<fstream>
 	<ctime>
+	<bits/stdc++.h>
+	<cstdio>
 	"AVLTree.h"
 	"NoAVL.h"
 	"AVLTreeModified.h"
-	"RedBlackTree.h"
-	"Splay.h"
+	"No_splay.h"
+	"arv_splay.h"
+	"No_VP.h"
+	"Arv_VP.h"
+	"No_B.h"
+	"arv_B.h"
 	"GastoDeputado.h"
 	"util.h"
 
-1542670046 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/AVLTree.h
+1543019435 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/AVLTree.h
 	"GastoDeputado.h"
 	"NoAVL.h"
 
 1542469773 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/NoAVL.h
 	"GastoDeputado.h"
 
-1542466881 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/GastoDeputado.h
+1543163459 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/GastoDeputado.h
 
 1540405858 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/RedBlackTree.h
 
@@ -36,13 +42,13 @@
 1542632757 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/util.h
 	"GastoDeputado.h"
 
-1542937345 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTree.cpp
+1543095454 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTree.cpp
 	"../headers/libraries.h"
 
-1542466966 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/GastoDeputado.cpp
+1543163452 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/GastoDeputado.cpp
 	"../headers/libraries.h"
 
-1542589011 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/NoAVL.cpp
+1542973468 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/NoAVL.cpp
 	"../headers/libraries.h"
 
 1542322738 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/RedBlackTree.cpp
@@ -58,6 +64,41 @@
 	"GastoDeputado.h"
 	"NoAVL.h"
 
-1542937707 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTreeModified.cpp
+1543149973 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/AVLTreeModified.cpp
+	"../headers/libraries.h"
+
+1543072821 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/No_splay.h
+	"GastoDeputado.h"
+
+1543072835 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/arv_splay.h
+	"No_splay.h"
+
+1543095909 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/arv_splay.cpp
+	"../headers/libraries.h"
+
+1543065134 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/No_splay.cpp
+	"../headers/libraries.h"
+
+1543096834 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/No_VP.h
+
+1543150044 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/Arv_VP.h
+	"No_VP.h"
+
+1543152181 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/Arv_VP.cpp
+	"../headers/libraries.h"
+
+1543090883 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/No_VP.cpp
+	"../headers/libraries.h"
+
+1543167224 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/No_B.h
+	"GastoDeputado.h"
+
+1543168002 /home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/headers/arv_B.h
+	"No_B.h"
+
+1543167686 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/arv_B.cpp
+	"../headers/libraries.h"
+
+1543692693 source:/home/josecarvalho/Documents/PROG/CodeBlocks/Trabalho_2_EDII_2018_3/src/No_B.cpp
 	"../headers/libraries.h"
 

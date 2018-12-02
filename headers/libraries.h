@@ -10,14 +10,20 @@
 #include <stdio.h>
 #include <fstream>
 #include <ctime>
+#include <bits/stdc++.h>
+#include <cstdio>
 
 using namespace std;
 
 #include "AVLTree.h"
 #include "NoAVL.h"
 #include "AVLTreeModified.h"
-#include "RedBlackTree.h"
-#include "Splay.h"
+#include "No_splay.h"
+#include "arv_splay.h"
+#include "No_VP.h"
+#include "Arv_VP.h"
+#include "No_B.h"
+#include "arv_B.h"
 #include "GastoDeputado.h"
 #include "util.h"
 

@@ -31,6 +31,7 @@ class GastoDeputado {
 
         GastoDeputado();
         GastoDeputado(
+                int gasto_id,
                 string buggedDate,
                 string receiptDate,
                 int deputyId,

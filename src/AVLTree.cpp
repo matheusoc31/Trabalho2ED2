@@ -185,10 +185,14 @@ NoAVL* AVLTree::insertion(NoAVL* node, GastoDeputado dep, unsigned int *comp, un
     }
 
     *comp += 1;
-    if(key <= node->getKey())
+    if(key <= node->getKey()) {
         node->setLeft(insertion(node->getLeft(), dep, comp, copias));
-    else
+        *copias += 1;
+    }
+    else {
         node->setRight(insertion(node->getRight(), dep, comp, copias));
+        *copias += 1;
+    }
 
     /** 2.Atualizando a altura do nó pai (e de todos os ancestrais, conforme o fim de cada chamada recursiva) **/
     node->setHeight(1 + max(height(node->getLeft()), height(node->getRight())));
@@ -249,15 +253,15 @@ NoAVL* AVLTree::searchTree(NoAVL* node, int key, unsigned int *comp, unsigned in
     }
 
     if(key == node->getKey()) {
-        comp += 1;
+        *comp += 1;
         return node;
     }
     else if(key < node->getKey()) {
-        comp += 2;
+        *comp += 2;
         return searchTree(node->getLeft(), key, comp, copias);
     }
     else {
-        comp += 2;
+        *comp += 2;
         return searchTree(node->getRight(), key, comp, copias);
     }
 }
@@ -286,17 +290,17 @@ NoAVL* AVLTree::deletion(NoAVL* node, int key, unsigned int *comp, unsigned int 
         return node;
 
     if(key < node->getKey()) {
-        comp += 1;
+        *comp += 1;
         node->setLeft(deletion(node->getLeft(), key, comp, copias));
         *copias += 1;
     }
     else if(key > node->getKey()) {
-        comp += 2;
+        *comp += 2;
         node->setRight(deletion(node->getRight(), key, comp, copias));
         *copias += 1;
     }
     else {
-        comp += 2;
+        *comp += 2;
         /// Casos 1 e 2: Sem filhos ou só 1 filho
         if((node->getLeft() == NULL) || (node->getRight() == NULL)) {
             NoAVL *aux = (node->getLeft() != NULL) ? node->getLeft():node->getRight();
@@ -305,8 +309,10 @@ NoAVL* AVLTree::deletion(NoAVL* node, int key, unsigned int *comp, unsigned int 
             if (aux == NULL) {
                 aux = node;
                 node = NULL;
-            } else *node = *aux; /// 1 filho
-            *copias += 1;
+            } else {
+                *node = *aux; /// 1 filho
+                *copias += 1;
+            }
 
             delete aux;
 

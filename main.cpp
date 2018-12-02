@@ -1,6 +1,6 @@
 #include "./headers/libraries.h"
 
-void printBT(const std::string& prefix, NoAVL* node, bool isRight) {
+void printBT(const std::string& prefix, No_splay* node, bool isRight) {
     if( node != nullptr )
     {
         std::cout << prefix;
@@ -8,11 +8,11 @@ void printBT(const std::string& prefix, NoAVL* node, bool isRight) {
         std::cout << (isRight ? "├──" : "└──" );
 
         // print the value of the node
-        std::cout << node->getKey() << std::endl;
+        std::cout << node->getInfo() << std::endl;
 
         // enter the next tree level - left and right branch
-        printBT( prefix + (isRight ? "│   " : "    "), node->getRight(), true);
-        printBT( prefix + (isRight ? "│   " : "    "), node->getLeft(), false);
+        printBT( prefix + (isRight ? "│   " : "    "), node->getDir(), true);
+        printBT( prefix + (isRight ? "│   " : "    "), node->getEsq(), false);
     }
 }
 
@@ -23,6 +23,36 @@ void preOrder(NoAVL *root) {
         preOrder(root->getLeft());
         preOrder(root->getRight());
     }
+}
+
+void preOrder(No_splay *root) {
+    if(root != NULL)
+    {
+        printf("%d ", root->getInfo());
+        preOrder(root->getEsq());
+        preOrder(root->getDir());
+    }
+}
+
+void copyTree(No_splay* from, No_splay* to) {
+
+    if(from == NULL){
+        to = NULL;
+        return;
+    }
+
+    to->setInfo(from->getInfo());
+    to->setDep(from->getDep());
+
+    No_splay *esq, *dir;
+    esq = new No_splay;
+    dir = new No_splay;
+
+    copyTree(from->getEsq(), esq);
+    to->setEsq(esq);
+
+    copyTree(from->getDir(), dir);
+    to->setDir(dir);
 }
 
 
@@ -51,7 +81,7 @@ int main()
         cin >> ARVORE;
     }
 
-    fstream deputados, entradaInsercao, saidaInsercao, entradaBusca, saidaBusca, entradaRemocao, saidaRemocao;
+    fstream deputados, entradaInsercao, saidaInsercao, entradaBusca, saidaBusca, entradaRemocao, saidaRemocao, teste;
 //    int exemplo[] = {10, 20, 30, 5, 3, 50, 40, 70, 60, 90};
 //    int exSize = sizeof(exemplo)/sizeof(int);
     int qtdNInsercao, qtdNBusca, qtdNRemocao, nLines, i, j, k, v, seedIdx, lineCount, randDepIdx, idxDup;
@@ -65,7 +95,7 @@ int main()
     unsigned int auxCompAVL = 0, auxCopiasAVL = 0, auxCompAVLMod = 0, auxCopiasAVLMod = 0;
 
     int *NInsercao, *NBusca, *NRemocao;
-    int *gastoIdInseridos, *gastoIdBuscaRemocao;
+    //int *gastoIdInseridos, *gastoIdBuscaRemocao;
     int nSeed = 5;
     int seedVec[nSeed];
 
@@ -79,16 +109,16 @@ int main()
 
     AVLTree *myAVL, *myAVLAux;
     AVLTreeModified *myAVLMod, *myAVLModAux;
-    /// vp
-    /// splay
-    /// b
+    Arv_VP *myVP, *myVPAux;
+    arv_splay *mySplay, *mySplayAux;
+    arv_B *myB, *myBAux;
 
     deputados.open("deputies_dataset_tratado.csv", ios::in);
 
     if(!deputados.is_open()) {
         cout << "Sem dataset." << endl;
-        delete comp;
-        delete copias;
+        delete [] comp;
+        delete [] copias;
         return 0;
     }
 
@@ -191,8 +221,8 @@ int main()
 
     if(!entradaInsercao.is_open()) {
         cout << "Sem entradaInsercao." << endl;
-        delete comp;
-        delete copias;
+        delete [] comp;
+        delete [] copias;
         return 0;
     }
 
@@ -209,8 +239,8 @@ int main()
 
     if(!entradaBusca.is_open()) {
         cout << "Sem entradaBusca." << endl;
-        delete comp;
-        delete copias;
+        delete [] comp;
+        delete [] copias;
         return 0;
     }
 
@@ -227,8 +257,8 @@ int main()
 
     if(!entradaRemocao.is_open()) {
         cout << "Sem entradaRemocao." << endl;
-        delete comp;
-        delete copias;
+        delete [] comp;
+        delete [] copias;
         return 0;
     }
 
@@ -249,13 +279,13 @@ int main()
             treeName = "./Resultados/AVLModificada/";
             break;
         case 3:
-            treeName = "./Resultados/VP";
+            treeName = "./Resultados/VP/";
             break;
         case 4:
-            treeName = "./Resultados/Splay";
+            treeName = "./Resultados/Splay/";
             break;
         case 5:
-            treeName = "./Resultados/B";
+            treeName = "./Resultados/B/";
             break;
     }
 
@@ -289,13 +319,40 @@ int main()
             saidaRemocao << "************************" << endl;
             break;
         case 3:
-            /// vp
+            cout << "** VP **" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaInsercao << "VP\n" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaBusca << "************************" << endl;
+            saidaBusca << "VP\n" << endl;
+            saidaBusca << "************************" << endl;
+            saidaRemocao << "************************" << endl;
+            saidaRemocao << "VP\n" << endl;
+            saidaRemocao << "************************" << endl;
             break;
         case 4:
-            /// splay
+            cout << "** Splay **" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaInsercao << "Splay\n" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaBusca << "************************" << endl;
+            saidaBusca << "Splay\n" << endl;
+            saidaBusca << "************************" << endl;
+            saidaRemocao << "************************" << endl;
+            saidaRemocao << "Splay\n" << endl;
+            saidaRemocao << "************************" << endl;
             break;
         case 5:
-            /// b
+            cout << "** B **" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaInsercao << "B\n" << endl;
+            saidaInsercao << "************************" << endl;
+            saidaBusca << "************************" << endl;
+            saidaBusca << "B\n" << endl;
+            saidaBusca << "************************" << endl;
+            saidaRemocao << "************************" << endl;
+            saidaRemocao << "B\n" << endl;
+            saidaRemocao << "************************" << endl;
             break;
         default:
             cout << "FAIL" << endl;
@@ -323,39 +380,49 @@ int main()
             copiasBuscaOrdenadaAVLMod[qtdNInsercao][qtdNBusca] = {0}, copiasRemocaoAVLMod[qtdNInsercao][qtdNRemocao] = {0},
              copiasRemocaoOrdenadaAVLMod[qtdNInsercao][qtdNBusca] = {0};
 
+
+    switch(ARVORE) {
+        case 1:
+            myAVL = new AVLTree;
+            myAVLAux = new AVLTree;
+            break;
+        case 2:
+            myAVLMod = new AVLTreeModified;
+            myAVLModAux = new AVLTreeModified;
+            break;
+        case 3:
+            myVP = new Arv_VP;
+            myVPAux = new Arv_VP;
+            break;
+        case 4:
+            mySplay = new arv_splay;
+            mySplayAux = new arv_splay;
+            break;
+        case 5:
+            myB = new arv_B(5);
+            myBAux = new arv_B(5);
+            break;
+
+    }
+
+
     for(i = 0; i < qtdNInsercao; i++) {
         cout << "NInserção = " << NInsercao[i] << endl;
         saidaInsercao << "\nNInsercao = " << NInsercao[i] << endl;
         saidaBusca << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
         saidaRemocao << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
 
+        if(NInsercao[i] == 500000)
+            nSeed = 3;
+
         for(seedIdx = 0; seedIdx < nSeed; seedIdx++) {
             cout << "seed = " << seedVec[seedIdx] << endl;
             saidaInsercao << "****** seed = " << seedVec[seedIdx] << endl;
             saidaBusca << "****** seed = " << seedVec[seedIdx] << endl;
             saidaRemocao << "****** seed = " << seedVec[seedIdx] << endl;
-            switch(ARVORE) {
-                case 1:
-                    myAVL = new AVLTree;
-                    myAVLAux = new AVLTree;
-                    break;
-                case 2:
-                    myAVLMod = new AVLTreeModified;
-                    myAVLModAux = new AVLTreeModified;
-                    break;
-                case 3:
-                    /// vp
-                    break;
-                case 4:
-                    /// splay
-                    break;
-                case 5:
-                    /// b
-                    break;
 
-            }
             srand(seedVec[seedIdx]);
-            gastoIdInseridos = new int[NInsercao[i]];
+            int gastoIdInseridos[NInsercao[i]] = {0};
 
             /** 1.INSERÇÃO **/
             cout << "Inserindo gasto_id's..." << endl;
@@ -375,36 +442,43 @@ int main()
                         myAVLMod->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
                         break;
                     case 3:
-                        /// vp
+                        myVP->inserir(allDeputados[gastoIdInseridos[k]], comp, copias);
                         break;
                     case 4:
-                        /// splay
+                        mySplay->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
                         break;
                     case 5:
-                        /// b
+//                        teste.open("teste.txt", ios::app);
+//                        cout << "gastoIdInseridos[" << k << "] = " << gastoIdInseridos[k] << ";" << endl;
+//                        teste << "gastoIdInseridos[" << k << "] = " << gastoIdInseridos[k] << ";" << endl;
+//                        teste.close();
+                        myB->insere(allDeputados[gastoIdInseridos[k]], comp, copias);
                         break;
                 }
             }
             endTime = clock();
             cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
             timeInsercaoAVL[i] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
-            compInsercaoAVL[i] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+            compInsercaoAVL[i] += (unsigned int) *comp; ///numero de comparacoes/numero de seeds (para calcular a media)
             copiasInsercaoAVL[i] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
             /// DESEMPENHO DA INSERÇÃO AQUI;
             cout << "Deputados Inseridos." << endl;
 
-//            saidaInsercao << "NInsercao = " << NInsercao[i] << endl;
             saidaInsercao << "Tempo de inserção: " << cpuTime << "s" << endl;
             saidaInsercao << "Número de comparações de chaves: " << *comp << endl;
             saidaInsercao << "Número de cópias de registros : " << *copias << endl;
 
-            /** 2.BUSCA **/
-//            saidaBusca << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
-            for(j = 0; j < qtdNBusca; j++) {
 
+            /** 2.BUSCA **/
+
+            for(j = 0; j < qtdNBusca; j++) {
+                cout << "NInsercao = " << NInsercao[i] << endl;
+                cout << "seedIdx = " << seedIdx << endl;
                 cout << "NBusca = " << NBusca[j] << endl;
                 cout << "Montando vetor de gasto_id's..." << endl;
-                gastoIdBuscaRemocao = new int[NBusca[j]];
+
+                int gastoIdBuscaRemocao[NBusca[j]] = {0};
+
                 propGastoArvore = NInsercao[i]/(NInsercao[i]+NBusca[j]); /// proporcao dos gasto_id's a serem gerados para a busca, que vão estar entre os gasto_id's inseridos
                 for(k = 0; k < NBusca[j]; k++) {
                     /// preenche vetor gastoIdBuscaRemocao com
@@ -417,6 +491,7 @@ int main()
                         gastoIdBuscaRemocao[k] = randomInt(0, nLines-1);
                     }
                 }
+
                 cout << "Buscando deputados... ";
                 *comp = *copias = 0;
                 startTime = clock();
@@ -427,21 +502,22 @@ int main()
                             break;
                         case 2:
                             myAVLMod->buscaDep(gastoIdBuscaRemocao[k], comp, copias);
+                            break;
                         case 3:
-                            /// vp
+                            myVP->busca(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 4:
-                            /// splay
+                            mySplay->buscaDep(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 5:
-                            /// b
+                            myB->busca(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                     }
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
                 timeBuscaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
-                compBuscaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                compBuscaAVL[i][j] += (unsigned int) *comp; ///numero de comparacoes/numero de seeds (para calcular a media)
                 copiasBuscaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA BUSCA AQUI;
                 cout << "Busca concluída." << endl;
@@ -474,57 +550,85 @@ int main()
                             myAVLMod->buscaDep(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 3:
-                            /// vp
+                            myVP->busca(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 4:
-                            /// splay
+                            mySplay->buscaDep(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 5:
-                            /// b
+                            myB->busca(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                     }
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
                 timeBuscaOrdenadaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
-                compBuscaOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                compBuscaOrdenadaAVL[i][j] += (unsigned int) *comp; ///numero de comparacoes/numero de seeds (para calcular a media)
                 copiasBuscaOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA BUSCA ORDENADA AQUI;
                 cout << "Busca concluída." << endl;
 
                 saidaBusca << "Busca Ordenada: " << endl;
-//                saidaBusca << "NBusca = " << NBusca[j] << endl;
                 saidaBusca << "Tempo de busca ordenada: " << cpuTime << "s" << endl;
                 saidaBusca << "Número de comparações de chaves: " << *comp << endl;
                 saidaBusca << "Número de cópias de registros : " << *copias << endl;
 
-                delete [] gastoIdBuscaRemocao;
-            }
+            } /** FIM BUSCA **/
+
 
             /** 3.REMOÇÃO **/
-//            saidaRemocao << "\n******** NInsercao = " << NInsercao[i] << " ********\n" << endl;
-            switch(ARVORE) {
-                case 1:
-                    *myAVLAux = *myAVL;
-                    break;
-                case 2:
-                    *myAVLModAux = *myAVLMod;
-                    break;
-                case 3:
-                    /// vp
-                    break;
-                case 4:
-                    /// splay
-                    break;
-                case 5:
-                    /// b
-                    break;
-            }
+
             for(j = 0; j < qtdNRemocao; j++) {
 
+                switch(ARVORE) {
+                    case 1:
+                        myAVL->deleteSubTree(myAVL->getRaiz());
+                        myAVLAux->deleteSubTree(myAVLAux->getRaiz());
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myAVLAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
+                        break;
+                    case 2:
+                        myAVLMod->deleteSubTree(myAVLMod->getRaiz());
+                        myAVLModAux->deleteSubTree(myAVLModAux->getRaiz());
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myAVLModAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
+                        break;
+                    case 3:
+                        myVPAux->deleteSubTree(myVPAux->getRaiz());
+                        myVPAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myVPAux->inserir(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
+                        break;
+                    case 4:
+                        if(mySplayAux->getRaiz() != NULL) {
+                            mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getEsq());
+                            mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getDir());
+                        }
+                        mySplayAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            mySplayAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias); /// VAI SER IGUAL A mySplay
+                        }
+                        break;
+                    case 5:
+                        myBAux->deletarArvore(myBAux->getRaiz());
+                        delete myBAux->getRaiz();
+                        myBAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myBAux->insere(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
+                        break;
+                }
+
+                cout << "NInsercao = " << NInsercao[i] << endl;
+                cout << "seedIdx = " << seedIdx << endl;
                 cout << "NRemocao = " << NRemocao[j] << endl;
                 cout << "Montando vetor de gasto_id's... " << endl;
-                gastoIdBuscaRemocao = new int[NRemocao[j]];
+
+                int gastoIdBuscaRemocao[NRemocao[j]] = {0};
+
                 propGastoArvore = NInsercao[i]/(NInsercao[i]+NRemocao[j]); /// proporcao dos gasto_id's a serem gerados para a remoção, que vão estar entre os gasto_id's inseridos
                 for(k = 0; k < NRemocao[j]; k++) {
                     /// preenche vetor gastoIdBuscaRemocao com
@@ -538,6 +642,14 @@ int main()
                     }
                 }
 
+
+//                cout << "Preorder traversal of the tree (before 1st removal) is: " << endl;
+//                myVP->preOrder(myVP->getRaiz());
+//                cout << "BEFORE*********" << endl;
+//                cout << endl;
+
+                /// *********************************************************** ERRO NESSE BLOCO:
+
                 cout << "Removendo deputados... ";
                 *comp = *copias = 0;
                 startTime = clock();
@@ -550,20 +662,20 @@ int main()
                             myAVLModAux->removeNo(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 3:
-                            /// vp
+                            myVPAux->remover(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 4:
-                            /// splay
+                            mySplayAux->removeDep(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 5:
-                            /// b
+                            myBAux->deletar(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                     }
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
                 timeRemocaoAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
-                compRemocaoAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                compRemocaoAVL[i][j] += (unsigned int) *comp; ///numero de comparacoes/numero de seeds (para calcular a media)
                 copiasRemocaoAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA REMOÇÃO AQUI;
                 cout << "Remoção concluída" << endl;
@@ -574,20 +686,60 @@ int main()
                 saidaRemocao << "Número de comparações de chaves: " << *comp << endl;
                 saidaRemocao << "Número de cópias de registros : " << *copias << endl;
 
+
+//                cout << "Preorder traversal of the tree (after 1st removal) is: " << endl;
+//                myVP->preOrder(myVP->getRaiz());
+//                cout << "AFTER*********" << endl;
+//                cout << endl;
+
+
+                /// ***********************************************************
+
+//                cout << "Preorder traversal of the tree (before sorting) is: " << endl;
+//                preOrder(mySplay2->getRaiz());
+//                cout << endl;
+
                 switch(ARVORE) {
                     case 1:
-                        *myAVLAux = *myAVL;
+                        myAVL->deleteSubTree(myAVL->getRaiz());
+                        myAVLAux->deleteSubTree(myAVLAux->getRaiz());
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myAVLAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
                         break;
                     case 2:
-                        *myAVLModAux = *myAVLMod;
+                        myAVLMod->deleteSubTree(myAVLMod->getRaiz());
+                        myAVLModAux->deleteSubTree(myAVLModAux->getRaiz());
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myAVLModAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
                         break;
-                    case 3: /// vp
+                    case 3:
+                        myVPAux->deleteSubTree(myVPAux->getRaiz());
+                        myVPAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myVPAux->inserir(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
                         break;
-                    case 4: /// splay
+                    case 4:
+                        mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getEsq());
+                        mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getDir());
+                        mySplayAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            mySplayAux->insereDep(allDeputados[gastoIdInseridos[k]], comp, copias); /// VAI SER IGUAL A mySplay
+                        }
                         break;
-                    case 5: /// b
+                    case 5:
+                        myBAux->deletarArvore(myBAux->getRaiz());
+                        delete myBAux->getRaiz();
+                        myBAux->setRaiz(NULL);
+                        for(k = 0; k < NInsercao[i]; k++) {
+                            myBAux->insere(allDeputados[gastoIdInseridos[k]], comp, copias);
+                        }
                         break;
                 }
+
+
                 /// DUPLICA 30% do vetor gastoIdBuscaRemocao:
                 cout << "Duplicando 30% do vetor de gasto_id's..." << endl;
                 idxDup = (int) NRemocao[j]*0.7;
@@ -597,6 +749,18 @@ int main()
                 /// ORDENA vetor gastoIdBuscaRemocao:
                 cout << "Ordenando vetor... " << endl;
                 ordena(gastoIdBuscaRemocao, NRemocao[j], comp, copias);
+
+
+//                for(k = 0; k < NRemocao[j]; k++) {
+//                    cout << gastoIdBuscaRemocao[k] << " ";
+//                } cout << endl << "NInsercao = " << NInsercao[i] << "; NRemocao = " << NRemocao[j] << endl;
+//
+//
+//                cout << "is raiz NULL? " << (mySplay->getRaiz() == NULL) << endl;
+//
+//                cout << "Preorder traversal of the Tree is: " << endl;
+//                preOrder(mySplay->getRaiz());
+
 
                 cout << "Removendo deputados ordenados... ";
                 *comp = *copias = 0;
@@ -610,76 +774,78 @@ int main()
                             myAVLModAux->removeNo(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 3:
-                            /// vp
+                            myVPAux->remover(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 4:
-                            /// splay
+                            mySplayAux->removeDep(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                         case 5:
-                            /// b
+                            myBAux->deletar(gastoIdBuscaRemocao[k], comp, copias);
                             break;
                     }
                 }
                 endTime = clock();
                 cpuTime = (double)(endTime - startTime)/(CLOCKS_PER_SEC);
                 timeRemocaoOrdenadaAVL[i][j] += (double) cpuTime; ///tempo gasto/numero de seeds (para calcular a media)
-                compRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de comparacoes/numero de seeds (para calcular a media)
+                compRemocaoOrdenadaAVL[i][j] += (unsigned int) *comp; ///numero de comparacoes/numero de seeds (para calcular a media)
                 copiasRemocaoOrdenadaAVL[i][j] += (unsigned int) *copias; ///numero de copias /numero de seeds (para calcular a media)
                 /// DESEMPENHO DA REMOÇÃO ORDENADA AQUI;
                 cout << "Remoção concluída" << endl;
 
                 saidaRemocao << "\nRemoção Ordenada:" << endl;
-//                saidaRemocao << "NRemocao = " << NRemocao[j] << endl;
                 saidaRemocao << "Tempo de Remoção: " << cpuTime << "s" << endl;
                 saidaRemocao << "Número de comparações de chaves: " << *comp << endl;
                 saidaRemocao << "Número de cópias de registros : " << *copias << endl;
 
-                switch(ARVORE) {
-                    case 1:
-                        *myAVLAux = *myAVL;
-                        break;
-                    case 2:
-                        *myAVLModAux = *myAVLMod;
-                        break;
-                    case 3: /// vp
-                        break;
-                    case 4: /// splay
-                        break;
-                    case 5: /// b
-                        break;
-                }
-
-                delete [] gastoIdBuscaRemocao;
-            }
-
-            delete [] gastoIdInseridos;
-            ///delete [] gastoIdBuscaRemocao;
+            } /** FIM REMOÇÃO **/
 
             switch(ARVORE) {
                 case 1:
-//                    myAVL->setRaiz(NULL);
-//                    myAVL = NULL;
-//                    myAVLAux->setRaiz(NULL);
-//                    myAVLAux = NULL;
-                    delete myAVL;
-                    delete myAVLAux;
+                    myAVL->deleteSubTree(myAVL->getRaiz());
+//                    myAVL->deleteSubTree(myAVL->getRaiz()->getRight());
+                    myAVL->setRaiz(NULL);
+
+                    myAVLAux->deleteSubTree(myAVLAux->getRaiz());
+//                    myAVLAux->deleteSubTree(myAVLAux->getRaiz()->getRight());
+                    myAVLAux->setRaiz(NULL);
                     break;
                 case 2:
-//                    myAVLMod->setRaiz(NULL);
-//                    myAVLMod = NULL;
-//                    myAVLModAux->setRaiz(NULL);
-//                    myAVLModAux = NULL;
-                    delete myAVLMod;
-                    delete myAVLModAux;
+                    myAVLMod->deleteSubTree(myAVLMod->getRaiz());
+//                    myAVLMod->deleteSubTree(myAVLMod->getRaiz()->getRight());
+                    myAVLMod->setRaiz(NULL);
+
+                    myAVLModAux->deleteSubTree(myAVLModAux->getRaiz());
+//                    myAVLModAux->deleteSubTree(myAVLModAux->getRaiz()->getRight());
+                    myAVLModAux->setRaiz(NULL);
                     break;
-                case 3: /// vp
+                case 3:
+                    myVP->deleteSubTree(myVP->getRaiz());
+                    myVP->setRaiz(NULL);
+
+                    myVPAux->deleteSubTree(myVPAux->getRaiz());
+                    myVPAux->setRaiz(NULL);
                     break;
-                case 4: /// splay
+                case 4:
+                    mySplay->deleteSubTree(mySplay->getRaiz()->getEsq());
+                    mySplay->deleteSubTree(mySplay->getRaiz()->getDir());
+                    mySplay->setRaiz(NULL);
+
+                    mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getEsq());
+                    mySplayAux->deleteSubTree(mySplayAux->getRaiz()->getDir());
+                    mySplayAux->setRaiz(NULL);
                     break;
-                case 5: /// b
+                case 5:
+                    myB->deletarArvore(myB->getRaiz());
+                    delete myB->getRaiz();
+                    myB->setRaiz(NULL);
+
+                    myBAux->deletarArvore(myBAux->getRaiz());
+                    delete myBAux->getRaiz();
+                    myBAux->setRaiz(NULL);
                     break;
             }
-        }
+        } /** FIM SEED **/
+
         /// ADICIONA ESTATISTICAS PARCIAIS
 
         saidaInsercao << "\n*********************" << endl;
@@ -689,10 +855,36 @@ int main()
         saidaInsercao << "Número médio de cópias de registros: " << copiasInsercaoAVL[i]/5 << endl;
         saidaInsercao << "*********************\n" << endl;
 
-        /// delete myAVLAux;
-        /// delete vp
-        /// delete splay
-        /// delete b
+    } /** FIM INSERÇÃO **/
+
+    delete [] comp;
+    delete [] copias;
+    delete [] allDeputados;
+    delete [] NInsercao;
+    delete [] NBusca;
+    delete [] NRemocao;
+
+    switch(ARVORE) {
+        case 1:
+            delete myAVL;
+            delete myAVLAux;
+            break;
+        case 2:
+            delete myAVLMod;
+            delete myAVLModAux;
+            break;
+        case 3:
+            delete myVP;
+            delete myVPAux;
+            break;
+        case 4:
+            delete mySplay;
+            delete mySplayAux;
+            break;
+        case 5:
+            delete myB;
+            delete myBAux;
+            break;
     }
 
     saidaInsercao.close();

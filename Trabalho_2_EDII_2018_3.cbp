@@ -34,21 +34,29 @@
 		</Compiler>
 		<Unit filename="headers/AVLTree.h" />
 		<Unit filename="headers/AVLTreeModified.h" />
+		<Unit filename="headers/Arv_VP.h" />
 		<Unit filename="headers/GastoDeputado.h" />
 		<Unit filename="headers/NoAVL.h" />
 		<Unit filename="headers/NoPatricia.h" />
+		<Unit filename="headers/No_B.h" />
+		<Unit filename="headers/No_VP.h" />
+		<Unit filename="headers/No_splay.h" />
 		<Unit filename="headers/PatriciaTree.h" />
-		<Unit filename="headers/RedBlackTree.h" />
-		<Unit filename="headers/Splay.h" />
+		<Unit filename="headers/arv_B.h" />
+		<Unit filename="headers/arv_splay.h" />
 		<Unit filename="headers/libraries.h" />
 		<Unit filename="headers/util.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AVLTree.cpp" />
 		<Unit filename="src/AVLTreeModified.cpp" />
+		<Unit filename="src/Arv_VP.cpp" />
 		<Unit filename="src/GastoDeputado.cpp" />
 		<Unit filename="src/NoAVL.cpp" />
-		<Unit filename="src/RedBlackTree.cpp" />
-		<Unit filename="src/Splay.cpp" />
+		<Unit filename="src/No_B.cpp" />
+		<Unit filename="src/No_VP.cpp" />
+		<Unit filename="src/No_splay.cpp" />
+		<Unit filename="src/arv_B.cpp" />
+		<Unit filename="src/arv_splay.cpp" />
 		<Unit filename="src/util.cpp" />
 		<Extensions>
 			<code_completion />

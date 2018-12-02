@@ -1,0 +1,1852 @@
+************************
+Splay
+
+************************
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001014s
+Número de comparações de chaves: 35542
+Número de cópias de registros : 33360
+Busca Ordenada: 
+Tempo de busca ordenada: 3.5e-05s
+Número de comparações de chaves: 2018
+Número de cópias de registros : 1021
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000256s
+Número de comparações de chaves: 13477
+Número de cópias de registros : 9425
+Busca Ordenada: 
+Tempo de busca ordenada: 7.8e-05s
+Número de comparações de chaves: 10046
+Número de cópias de registros : 5054
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000425s
+Número de comparações de chaves: 26644
+Número de cópias de registros : 18456
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000154s
+Número de comparações de chaves: 20039
+Número de cópias de registros : 10046
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001441s
+Número de comparações de chaves: 133874
+Número de cópias de registros : 93111
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000755s
+Número de comparações de chaves: 100144
+Número de cópias de registros : 50166
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.002474s
+Número de comparações de chaves: 268743
+Número de cópias de registros : 187486
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001573s
+Número de comparações de chaves: 200285
+Número de cópias de registros : 100327
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.010869s
+Número de comparações de chaves: 1337370
+Número de cópias de registros : 929339
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009483s
+Número de comparações de chaves: 1001195
+Número de cópias de registros : 501367
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.00066s
+Número de comparações de chaves: 36324
+Número de cópias de registros : 34122
+Busca Ordenada: 
+Tempo de busca ordenada: 1.9e-05s
+Número de comparações de chaves: 2041
+Número de cópias de registros : 1046
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000263s
+Número de comparações de chaves: 17462
+Número de cópias de registros : 13528
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10007
+Número de cópias de registros : 5008
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000396s
+Número de comparações de chaves: 34337
+Número de cópias de registros : 26384
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20014
+Número de cópias de registros : 10016
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001558s
+Número de comparações de chaves: 173933
+Número de cópias de registros : 134496
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000752s
+Número de comparações de chaves: 100006
+Número de cópias de registros : 50008
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.003127s
+Número de comparações de chaves: 348392
+Número de cópias de registros : 269592
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001558s
+Número de comparações de chaves: 200007
+Número de cópias de registros : 100008
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.01516s
+Número de comparações de chaves: 1741545
+Número de cópias de registros : 1347472
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00942s
+Número de comparações de chaves: 1000084
+Número de cópias de registros : 500096
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000652s
+Número de comparações de chaves: 35990
+Número de cópias de registros : 33772
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000318s
+Número de comparações de chaves: 18570
+Número de cópias de registros : 14796
+Busca Ordenada: 
+Tempo de busca ordenada: 7.9e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000306s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000205s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000975s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000764s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001828s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001553s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.009632s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.010478s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000674s
+Número de comparações de chaves: 35933
+Número de cópias de registros : 33726
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000137s
+Número de comparações de chaves: 14903
+Número de cópias de registros : 10604
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000235s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000151s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000877s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000751s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001695s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.0016s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008471s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00947s
+Número de comparações de chaves: 999998
+Número de cópias de registros : 500000
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.00062s
+Número de comparações de chaves: 36115
+Número de cópias de registros : 33960
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000244s
+Número de comparações de chaves: 16556
+Número de cópias de registros : 12492
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000297s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000911s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000886s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001664s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001612s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008696s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009405s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+
+******** NInsercao = 5000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001099s
+Número de comparações de chaves: 47333
+Número de cópias de registros : 44264
+Busca Ordenada: 
+Tempo de busca ordenada: 5.4e-05s
+Número de comparações de chaves: 3268
+Número de cópias de registros : 2337
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000601s
+Número de comparações de chaves: 35674
+Número de cópias de registros : 29338
+Busca Ordenada: 
+Tempo de busca ordenada: 7.9e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000251s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000151s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000856s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000754s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001683s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001549s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008418s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00941s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000949s
+Número de comparações de chaves: 47047
+Número de cópias de registros : 44053
+Busca Ordenada: 
+Tempo de busca ordenada: 1.6e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000196s
+Número de comparações de chaves: 15897
+Número de cópias de registros : 11740
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000244s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000993s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000709s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001632s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00159s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008585s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009335s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000995s
+Número de comparações de chaves: 46934
+Número de cópias de registros : 43985
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2018
+Número de cópias de registros : 1019
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000161s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000261s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000156s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001054s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000764s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001738s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001565s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008531s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00934s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000829s
+Número de comparações de chaves: 46928
+Número de cópias de registros : 43857
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2020
+Número de cópias de registros : 1020
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000419s
+Número de comparações de chaves: 22904
+Número de cópias de registros : 17129
+Busca Ordenada: 
+Tempo de busca ordenada: 7.8e-05s
+Número de comparações de chaves: 10037
+Número de cópias de registros : 5045
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000336s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000151s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000984s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000756s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001966s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001933s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.010261s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009456s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000732s
+Número de comparações de chaves: 46804
+Número de cópias de registros : 43875
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2004
+Número de cópias de registros : 1004
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000114s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000321s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000868s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000708s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001593s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001608s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008724s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009476s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+
+******** NInsercao = 10000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001181s
+Número de comparações de chaves: 51522
+Número de cópias de registros : 48140
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2022
+Número de cópias de registros : 1022
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000114s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+Busca Ordenada: 
+Tempo de busca ordenada: 7.2e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000262s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000172s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001004s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000805s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001905s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001744s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.009932s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009453s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001032s
+Número de comparações de chaves: 51829
+Número de cópias de registros : 48481
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2004
+Número de cópias de registros : 1003
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.00017s
+Número de comparações de chaves: 13412
+Número de cópias de registros : 8326
+Busca Ordenada: 
+Tempo de busca ordenada: 7.8e-05s
+Número de comparações de chaves: 10034
+Número de cópias de registros : 5034
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.00031s
+Número de comparações de chaves: 23609
+Número de cópias de registros : 14124
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000154s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000795s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000755s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001557s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001559s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008021s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009461s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001285s
+Número de comparações de chaves: 51802
+Número de cópias de registros : 48505
+Busca Ordenada: 
+Tempo de busca ordenada: 2.1e-05s
+Número de comparações de chaves: 2085
+Número de cópias de registros : 1087
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000139s
+Número de comparações de chaves: 10840
+Número de cópias de registros : 5763
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10013
+Número de cópias de registros : 5011
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000278s
+Número de comparações de chaves: 21771
+Número de cópias de registros : 11936
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000222s
+Número de comparações de chaves: 20007
+Número de cópias de registros : 10008
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000812s
+Número de comparações de chaves: 105294
+Número de cópias de registros : 56048
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000943s
+Número de comparações de chaves: 100013
+Número de cópias de registros : 50016
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001619s
+Número de comparações de chaves: 210677
+Número de cópias de registros : 112192
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001556s
+Número de comparações de chaves: 200034
+Número de cópias de registros : 100040
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008157s
+Número de comparações de chaves: 1054403
+Número de cópias de registros : 562144
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009414s
+Número de comparações de chaves: 1000097
+Número de cópias de registros : 500112
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000979s
+Número de comparações de chaves: 51654
+Número de cópias de registros : 48323
+Busca Ordenada: 
+Tempo de busca ordenada: 3.1e-05s
+Número de comparações de chaves: 2031
+Número de cópias de registros : 1032
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000132s
+Número de comparações de chaves: 11155
+Número de cópias de registros : 6166
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.00017s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00019s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000777s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000814s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001659s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001647s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008155s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009386s
+Número de comparações de chaves: 999998
+Número de cópias de registros : 500000
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.0011s
+Número de comparações de chaves: 52329
+Número de cópias de registros : 48924
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000217s
+Número de comparações de chaves: 18748
+Número de cópias de registros : 15000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000162s
+Número de comparações de chaves: 10028
+Número de cópias de registros : 5032
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000482s
+Número de comparações de chaves: 37290
+Número de cópias de registros : 29764
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00018s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001189s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000752s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.00218s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001553s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.010369s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009425s
+Número de comparações de chaves: 999998
+Número de cópias de registros : 500000
+
+******** NInsercao = 50000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001576s
+Número de comparações de chaves: 64581
+Número de cópias de registros : 60474
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2016
+Número de cópias de registros : 1016
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000349s
+Número de comparações de chaves: 15804
+Número de cópias de registros : 10311
+Busca Ordenada: 
+Tempo de busca ordenada: 8.1e-05s
+Número de comparações de chaves: 10087
+Número de cópias de registros : 5091
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000495s
+Número de comparações de chaves: 31254
+Número de cópias de registros : 21249
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000229s
+Número de comparações de chaves: 20067
+Número de cópias de registros : 10070
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001334s
+Número de comparações de chaves: 155924
+Número de cópias de registros : 102670
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000936s
+Número de comparações de chaves: 100247
+Número de cópias de registros : 50275
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.002812s
+Número de comparações de chaves: 312641
+Número de cópias de registros : 203435
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001617s
+Número de comparações de chaves: 200314
+Número de cópias de registros : 100354
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.013773s
+Número de comparações de chaves: 1560412
+Número de cópias de registros : 1021398
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009511s
+Número de comparações de chaves: 1001092
+Número de cópias de registros : 501257
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001969s
+Número de comparações de chaves: 64183
+Número de cópias de registros : 60087
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2015
+Número de cópias de registros : 1014
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000332s
+Número de comparações de chaves: 21022
+Número de cópias de registros : 16322
+Busca Ordenada: 
+Tempo de busca ordenada: 8.2e-05s
+Número de comparações de chaves: 10054
+Número de cópias de registros : 5056
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000539s
+Número de comparações de chaves: 42151
+Número de cópias de registros : 34164
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20014
+Número de cópias de registros : 10014
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000901s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000755s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001796s
+Número de comparações de chaves: 199999
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00155s
+Número de comparações de chaves: 199999
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008881s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009489s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001755s
+Número de comparações de chaves: 63221
+Número de cópias de registros : 59357
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2016
+Número de cópias de registros : 1014
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000312s
+Número de comparações de chaves: 22247
+Número de cópias de registros : 16133
+Busca Ordenada: 
+Tempo de busca ordenada: 8e-05s
+Número de comparações de chaves: 10006
+Número de cópias de registros : 5005
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000538s
+Número de comparações de chaves: 42704
+Número de cópias de registros : 34100
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000184s
+Número de comparações de chaves: 20013
+Número de cópias de registros : 10014
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000988s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000751s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001843s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001652s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.009633s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009425s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001616s
+Número de comparações de chaves: 63850
+Número de cópias de registros : 59820
+Busca Ordenada: 
+Tempo de busca ordenada: 2.4e-05s
+Número de comparações de chaves: 2012
+Número de cópias de registros : 1011
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000133s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000312s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000182s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000887s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000797s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001973s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001562s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008627s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009421s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.00159s
+Número de comparações de chaves: 64392
+Número de cópias de registros : 60427
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2014
+Número de cópias de registros : 1013
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000331s
+Número de comparações de chaves: 23994
+Número de cópias de registros : 17751
+Busca Ordenada: 
+Tempo de busca ordenada: 7.9e-05s
+Número de comparações de chaves: 10061
+Número de cópias de registros : 5061
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000609s
+Número de comparações de chaves: 46080
+Número de cópias de registros : 33731
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000164s
+Número de comparações de chaves: 20034
+Número de cópias de registros : 10036
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.002245s
+Número de comparações de chaves: 228766
+Número de cópias de registros : 167202
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000766s
+Número de comparações de chaves: 100175
+Número de cópias de registros : 50200
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.004425s
+Número de comparações de chaves: 459096
+Número de cópias de registros : 337429
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001621s
+Número de comparações de chaves: 200253
+Número de cópias de registros : 100278
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.021751s
+Número de comparações de chaves: 2295188
+Número de cópias de registros : 1705231
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009461s
+Número de comparações de chaves: 1000368
+Número de cópias de registros : 500425
+
+******** NInsercao = 100000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001996s
+Número de comparações de chaves: 69292
+Número de cópias de registros : 64977
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2024
+Número de cópias de registros : 1023
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000294s
+Número de comparações de chaves: 17866
+Número de cópias de registros : 12152
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10011
+Número de cópias de registros : 5010
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000452s
+Número de comparações de chaves: 34883
+Número de cópias de registros : 23530
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20011
+Número de cópias de registros : 10010
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001554s
+Número de comparações de chaves: 173982
+Número de cópias de registros : 122316
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000754s
+Número de comparações de chaves: 100053
+Número de cópias de registros : 50057
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.003055s
+Número de comparações de chaves: 348328
+Número de cópias de registros : 234872
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001793s
+Número de comparações de chaves: 200091
+Número de cópias de registros : 100100
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.016393s
+Número de comparações de chaves: 1745555
+Número de cópias de registros : 1208842
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00963s
+Número de comparações de chaves: 1000346
+Número de cópias de registros : 500398
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001995s
+Número de comparações de chaves: 69085
+Número de cópias de registros : 64826
+Busca Ordenada: 
+Tempo de busca ordenada: 1.9e-05s
+Número de comparações de chaves: 2039
+Número de cópias de registros : 1040
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000259s
+Número de comparações de chaves: 16434
+Número de cópias de registros : 11941
+Busca Ordenada: 
+Tempo de busca ordenada: 7.9e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000201s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000989s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000756s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001626s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001565s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008323s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009518s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001912s
+Número de comparações de chaves: 69135
+Número de cópias de registros : 64771
+Busca Ordenada: 
+Tempo de busca ordenada: 1.7e-05s
+Número de comparações de chaves: 2006
+Número de cópias de registros : 1006
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000367s
+Número de comparações de chaves: 23611
+Número de cópias de registros : 17374
+Busca Ordenada: 
+Tempo de busca ordenada: 7.6e-05s
+Número de comparações de chaves: 10006
+Número de cópias de registros : 5005
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000619s
+Número de comparações de chaves: 37399
+Número de cópias de registros : 29884
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000158s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000982s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000823s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001988s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001611s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.009957s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009512s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.001885s
+Número de comparações de chaves: 69180
+Número de cópias de registros : 64834
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2024
+Número de cópias de registros : 1023
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000191s
+Número de comparações de chaves: 13738
+Número de cópias de registros : 8412
+Busca Ordenada: 
+Tempo de busca ordenada: 8e-05s
+Número de comparações de chaves: 10066
+Número de cópias de registros : 5073
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000285s
+Número de comparações de chaves: 27103
+Número de cópias de registros : 16479
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000159s
+Número de comparações de chaves: 20048
+Número de cópias de registros : 10050
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001138s
+Número de comparações de chaves: 135487
+Número de cópias de registros : 82322
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000762s
+Número de comparações de chaves: 100316
+Número de cópias de registros : 50341
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.002243s
+Número de comparações de chaves: 268770
+Número de cópias de registros : 163128
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001634s
+Número de comparações de chaves: 200400
+Número de cópias de registros : 100442
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.011683s
+Número de comparações de chaves: 1352190
+Número de cópias de registros : 835715
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009532s
+Número de comparações de chaves: 1001242
+Número de cópias de registros : 501431
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.002073s
+Número de comparações de chaves: 68732
+Número de cópias de registros : 64336
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2031
+Número de cópias de registros : 1030
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000262s
+Número de comparações de chaves: 18690
+Número de cópias de registros : 12904
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10004
+Número de cópias de registros : 5003
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000436s
+Número de comparações de chaves: 37736
+Número de cópias de registros : 26123
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20006
+Número de cópias de registros : 10005
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001661s
+Número de comparações de chaves: 187423
+Número de cópias de registros : 133517
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000751s
+Número de comparações de chaves: 100006
+Número de cópias de registros : 50006
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.00171s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001506s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.00908s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009378s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+
+******** NInsercao = 1000 ********
+
+****** seed = 1957747793
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000544s
+Número de comparações de chaves: 35542
+Número de cópias de registros : 33360
+Busca Ordenada: 
+Tempo de busca ordenada: 1.9e-05s
+Número de comparações de chaves: 2018
+Número de cópias de registros : 1021
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000116s
+Número de comparações de chaves: 13477
+Número de cópias de registros : 9425
+Busca Ordenada: 
+Tempo de busca ordenada: 8.7e-05s
+Número de comparações de chaves: 10046
+Número de cópias de registros : 5054
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000403s
+Número de comparações de chaves: 26644
+Número de cópias de registros : 18456
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000153s
+Número de comparações de chaves: 20039
+Número de cópias de registros : 10046
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001337s
+Número de comparações de chaves: 133874
+Número de cópias de registros : 93111
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000793s
+Número de comparações de chaves: 100144
+Número de cópias de registros : 50166
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.002301s
+Número de comparações de chaves: 268743
+Número de cópias de registros : 187486
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001513s
+Número de comparações de chaves: 200285
+Número de cópias de registros : 100327
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.011318s
+Número de comparações de chaves: 1337370
+Número de cópias de registros : 929339
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009356s
+Número de comparações de chaves: 1001195
+Número de cópias de registros : 501367
+****** seed = 0
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000643s
+Número de comparações de chaves: 36324
+Número de cópias de registros : 34122
+Busca Ordenada: 
+Tempo de busca ordenada: 1.6e-05s
+Número de comparações de chaves: 2041
+Número de cópias de registros : 1046
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000203s
+Número de comparações de chaves: 17462
+Número de cópias de registros : 13528
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10007
+Número de cópias de registros : 5008
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000406s
+Número de comparações de chaves: 34337
+Número de cópias de registros : 26384
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000156s
+Número de comparações de chaves: 20014
+Número de cópias de registros : 10016
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.001566s
+Número de comparações de chaves: 173933
+Número de cópias de registros : 134496
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000767s
+Número de comparações de chaves: 100006
+Número de cópias de registros : 50008
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.003116s
+Número de comparações de chaves: 348392
+Número de cópias de registros : 269592
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001511s
+Número de comparações de chaves: 200007
+Número de cópias de registros : 100008
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.016493s
+Número de comparações de chaves: 1741545
+Número de cópias de registros : 1347472
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00934s
+Número de comparações de chaves: 1000084
+Número de cópias de registros : 500096
+****** seed = 1840009576
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000547s
+Número de comparações de chaves: 35990
+Número de cópias de registros : 33772
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000287s
+Número de comparações de chaves: 18570
+Número de cópias de registros : 14796
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000285s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000187s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000974s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000821s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001975s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001561s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.009716s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009405s
+Número de comparações de chaves: 1000000
+Número de cópias de registros : 500000
+****** seed = 32548
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000714s
+Número de comparações de chaves: 35933
+Número de cópias de registros : 33726
+Busca Ordenada: 
+Tempo de busca ordenada: 1.8e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.000201s
+Número de comparações de chaves: 14903
+Número de cópias de registros : 10604
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000251s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000156s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000907s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.00088s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001731s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001617s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008528s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009358s
+Número de comparações de chaves: 999998
+Número de cópias de registros : 500000
+****** seed = 15
+
+***** NBusca = 1000
+Busca normal:
+Tempo de busca: 0.000658s
+Número de comparações de chaves: 36115
+Número de cópias de registros : 33960
+Busca Ordenada: 
+Tempo de busca ordenada: 3.4e-05s
+Número de comparações de chaves: 2007
+Número de cópias de registros : 1008
+
+***** NBusca = 5000
+Busca normal:
+Tempo de busca: 0.0002s
+Número de comparações de chaves: 16556
+Número de cópias de registros : 12492
+Busca Ordenada: 
+Tempo de busca ordenada: 7.7e-05s
+Número de comparações de chaves: 10000
+Número de cópias de registros : 5000
+
+***** NBusca = 10000
+Busca normal:
+Tempo de busca: 0.000284s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000152s
+Número de comparações de chaves: 20000
+Número de cópias de registros : 10000
+
+***** NBusca = 50000
+Busca normal:
+Tempo de busca: 0.000883s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.000824s
+Número de comparações de chaves: 100000
+Número de cópias de registros : 50000
+
+***** NBusca = 100000
+Busca normal:
+Tempo de busca: 0.001836s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.001625s
+Número de comparações de chaves: 200000
+Número de cópias de registros : 100000
+
+***** NBusca = 500000
+Busca normal:
+Tempo de busca: 0.008909s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000
+Busca Ordenada: 
+Tempo de busca ordenada: 0.009517s
+Número de comparações de chaves: 999999
+Número de cópias de registros : 500000

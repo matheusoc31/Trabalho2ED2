@@ -25,7 +25,7 @@ class AVLTree {
 //        bool insereNo(GastoDeputado dep);
 //        bool insereNoAux(NoAVL* rx, int key, GastoDeputado dep);
 
-        void insereDep(GastoDeputado dep, unsigned int *comp, unsigned int *copiass);
+        void insereDep(GastoDeputado dep, unsigned int *comp, unsigned int *copias);
         NoAVL* newNodeDep(GastoDeputado dep) ;
         NoAVL* insertion(NoAVL* node, GastoDeputado dep, unsigned int *comp, unsigned int *copias);
 

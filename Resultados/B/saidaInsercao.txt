@@ -1,0 +1,103 @@
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+************************
+B
+
+************************
+
+NInsercao = 1000
+****** seed = 1957747793
+Tempo de inserção: 0.015269s
+Número de comparações de chaves: 11739
+Número de cópias de registros : 5022
+****** seed = 0
+Tempo de inserção: 0.011291s
+Número de comparações de chaves: 12149
+Número de cópias de registros : 5191
+****** seed = -1945484952
+Tempo de inserção: 0.012758s
+Número de comparações de chaves: 12030
+Número de cópias de registros : 5089
+****** seed = 32552
+Tempo de inserção: 0.012478s
+Número de comparações de chaves: 12140
+Número de cópias de registros : 5092
+****** seed = 15
+Tempo de inserção: 0.01201s
+Número de comparações de chaves: 12229
+Número de cópias de registros : 5114
+
+*********************
+NInsercao = 1000
+Tempo médio de inserção: 0.0127612s
+Número médio de comparações de chaves: 12057
+Número médio de cópias de registros: 5101
+*********************
+
+
+NInsercao = 5000
+****** seed = 1957747793
+Tempo de inserção: 0.066354s
+Número de comparações de chaves: 76426
+Número de cópias de registros : 25789
