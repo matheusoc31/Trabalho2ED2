@@ -14,12 +14,13 @@ public:
     void setRaiz(NoTST* novo){raiz=novo;};
     void insere(string palavra);
     bool busca(string palavra);
-    void imprime();
+    void autocompletar(string palavra);
 private:
     NoTST* raiz;
     void auxInsere(NoTST* no, string palavra, int i);
     bool auxBusca(NoTST* no, string palavra,int i);
-    void auxImprime(NoTST* raiz);
+    void auxAutocompletar(NoTST* no, string palavra, int i, string novapalavra);
+    void imprimeAutocompletar(NoTST* no, string novapalavra);
 };
 
 #endif // ARVTST_H

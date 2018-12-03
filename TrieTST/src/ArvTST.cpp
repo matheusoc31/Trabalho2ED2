@@ -163,7 +163,7 @@ bool ArvTST::auxBusca(NoTST* no, string palavra, int i)
                 }
                 return auxBusca(no->getMeio(),palavra,i+1);
             }
-            if(no->getInfo()>palavra[0])
+            else if(no->getInfo()>palavra[0])
             {
                 return auxBusca(no->getEsq(),palavra,i);
             }
@@ -180,19 +180,84 @@ bool ArvTST::auxBusca(NoTST* no, string palavra, int i)
     }
 }
 
-void ArvTST::imprime()
+void ArvTST::autocompletar(string palavra)
 {
-    auxImprime(raiz);
+    if(getRaiz()==NULL)
+    {
+        cout << "Arvore vazia." << endl;
+    }
+    else
+    {
+        string novapalavra;
+        if(getRaiz()->getInfo()==palavra[0])
+        {
+            novapalavra.push_back(getRaiz()->getInfo());
+            auxAutocompletar(getRaiz()->getMeio(),palavra,1,novapalavra);
+        }
+        else if(getRaiz()->getInfo()>palavra[0])
+        {
+            auxAutocompletar(getRaiz()->getEsq(),palavra,0,novapalavra);
+        }
+        else if(getRaiz()->getInfo()<palavra[0])
+        {
+            auxAutocompletar(getRaiz()->getDir(), palavra,0,novapalavra);
+        }
+    }
 }
 
-void ArvTST::auxImprime(NoTST* no)
+void ArvTST::auxAutocompletar(NoTST* no, string palavra, int i,string novapalavra)
 {
-    while(no!=NULL)
+    if(i < palavra.size())
     {
+        if(no->getInfo()==palavra[i])
+        {
+            if(i == palavra.size()-1)
+            {
+                imprimeAutocompletar(no, novapalavra);
+            }
+            else
+            {
+                novapalavra.push_back(no->getInfo());
+                auxAutocompletar(no->getMeio(),palavra,i+1,novapalavra);
+            }
+        }
+        else if(no->getInfo()>palavra[0])
+        {
+            if(i == palavra.size()-1)
+            {
+                imprimeAutocompletar(no, novapalavra);
+            }
+            else
+            {
+                auxAutocompletar(no->getEsq(),palavra,i,novapalavra);
+            }
+        }
+        else if(no->getInfo()<palavra[0])
+        {
+            if(i == palavra.size()-1)
+            {
+                imprimeAutocompletar(no, novapalavra);
+            }
+            else
+            {
+                auxAutocompletar(no->getDir(), palavra,0,novapalavra);
+            }
+        }
+    }
+}
+
+void ArvTST::imprimeAutocompletar(NoTST* no, string novapalavra)
+{
+    if(no!=NULL)
+    {
+        imprimeAutocompletar(no->getEsq(),novapalavra);
+        novapalavra.push_back(no->getInfo());
+        imprimeAutocompletar(no->getMeio(),novapalavra);
         if(no->getFim())
         {
-            cout << no->getInfo() << endl;
+            cout << novapalavra << ", ";
         }
-        no = no->getMeio();
+        imprimeAutocompletar(no->getDir(), novapalavra);
+        novapalavra.erase(novapalavra.end()-1);
     }
 }

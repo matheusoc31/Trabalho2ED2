@@ -8,15 +8,10 @@ using namespace std;
 int main()
 {
     ArvTST arvT;
-    string frase = "bilu";
+    string frase = "botaagua";
+    string frase2 = "botafogo";
     arvT.insere(frase);
-    if(arvT.busca("bilut"))
-    {
-        cout << "Achoooou";
-    }
-    else
-    {
-        cout << "Nao achooou";
-    }
+    arvT.insere(frase2);
+    arvT.autocompletar("bo");
     return 0;
 }
