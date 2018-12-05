@@ -15,13 +15,13 @@ int main()
     string frase5 = "castelo";
     string frase6 = "vaca";
     string frase7 = "ana";
-    arvT.insere(frase1);
-    arvT.insere(frase2);
-    arvT.insere(frase3);
-    arvT.insere(frase4);
-    arvT.insere(frase5);
-    arvT.insere(frase6);
-    arvT.insere(frase7);
+    arvT.insere(frase1, 332.2);
+    arvT.insere(frase2, 403);
+    arvT.insere(frase3, 344);
+    arvT.insere(frase4, 932);
+    arvT.insere(frase5, 1299);
+    arvT.insere(frase6, 4000);
+    arvT.insere(frase7, 304);
     arvT.imprimir();
     return 0;
 }
