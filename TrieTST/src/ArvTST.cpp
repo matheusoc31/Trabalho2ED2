@@ -32,11 +32,30 @@ void ArvTST::insere(string palavra)
         }
         else if(getRaiz()->getInfo()>palavra[0])
         {
-            auxInsere(getRaiz()->getEsq(),palavra,0);
+            if(getRaiz()->getEsq()==NULL)
+            {
+                NoTST* novo = new NoTST(palavra[0]);
+                getRaiz()->setEsq(novo);
+                auxInsere(getRaiz()->getEsq(),palavra,0);
+            }
+            else
+            {
+                auxInsere(getRaiz()->getEsq(),palavra,0);
+            }
+
         }
         else if(getRaiz()->getInfo()<palavra[0])
         {
-            auxInsere(getRaiz()->getDir(), palavra,0);
+            if(getRaiz()->getDir()==NULL)
+            {
+                NoTST* novo = new NoTST(palavra[0]);
+                getRaiz()->setDir(novo);
+                auxInsere(getRaiz()->getDir(),palavra,0);
+            }
+            else
+            {
+                auxInsere(getRaiz()->getDir(), palavra,0);
+            }
         }
     }
 }
@@ -70,6 +89,77 @@ void ArvTST::auxInsere(NoTST* no, string palavra, int i)
                 if(no->getMeio()->getEsq()==NULL)
                 {
                     NoTST* novo = new NoTST(palavra[i]);
+                    no->getMeio()->setEsq(novo);
+                    if(i == palavra.size()-2)
+                    {
+                        novo->SetFim(true);
+                    }
+                    auxInsere(no->getMeio()->getEsq(),palavra,i);
+                }
+                else
+                {
+                    if(i == palavra.size()-2)
+                    {
+                        no->SetFim(true);
+                    }
+                    auxInsere2(no->getMeio()->getEsq(),palavra,i);
+                }
+            }
+            else if(no->getMeio()->getInfo()<palavra[i])
+            {
+                if(no->getMeio()->getDir()==NULL)
+                {
+                    NoTST* novo = new NoTST(palavra[i]);
+                    no->getMeio()->setDir(novo);
+                    if(i == palavra.size()-2)
+                    {
+                        novo->SetFim(true);
+                    }
+
+                    auxInsere(no->getMeio()->getDir(),palavra,i);
+                }
+                else
+                {
+                    if(i == palavra.size()-2)
+                    {
+                        no->SetFim(true);
+                    }
+                    auxInsere2(no->getMeio()->getDir(), palavra,i);
+                }
+            }
+        }
+    }
+}
+
+void ArvTST::auxInsere2(NoTST* no, string palavra, int i)
+{
+    if(i < palavra.size())
+    {
+        if(no->getMeio()==NULL)
+        {
+            NoTST* novo = new NoTST(palavra[i+1]);
+            no->setMeio(novo);
+            if(i == palavra.size()-2)
+            {
+                novo->SetFim(true);
+            }
+            auxInsere(no->getMeio(), palavra, i+1);
+        }
+        else
+        {
+            if(no->getInfo()==palavra[i])
+            {
+                if(i == palavra.size()-2)
+                {
+                    no->SetFim(true);
+                }
+                auxInsere(no,palavra,i+1);
+            }
+            else if(no->getInfo()>palavra[i])
+            {
+                if(no->getEsq()==NULL)
+                {
+                    NoTST* novo = new NoTST(palavra[i]);
                     no->setEsq(novo);
                     if(i == palavra.size()-2)
                     {
@@ -83,12 +173,12 @@ void ArvTST::auxInsere(NoTST* no, string palavra, int i)
                     {
                         no->SetFim(true);
                     }
-                    auxInsere(no->getEsq(),palavra,i);
+                    auxInsere2(no->getEsq(),palavra,i);
                 }
             }
-            else if(no->getMeio()->getInfo()<palavra[i])
+            else if(no->getInfo()<palavra[i])
             {
-                if(no->getMeio()->getDir()==NULL)
+                if(no->getDir()==NULL)
                 {
                     NoTST* novo = new NoTST(palavra[i]);
                     no->setDir(novo);
@@ -104,7 +194,7 @@ void ArvTST::auxInsere(NoTST* no, string palavra, int i)
                     {
                         no->SetFim(true);
                     }
-                    auxInsere(no->getDir(), palavra,i);
+                    auxInsere2(no->getDir(), palavra,i);
                 }
             }
         }
@@ -192,7 +282,14 @@ void ArvTST::autocompletar(string palavra)
         if(getRaiz()->getInfo()==palavra[0])
         {
             novapalavra.push_back(getRaiz()->getInfo());
-            auxAutocompletar(getRaiz()->getMeio(),palavra,1,novapalavra);
+            if(palavra.size()==1)
+            {
+                imprimeAutocompletar(getRaiz()->getMeio(), novapalavra);
+            }
+            else
+            {
+                auxAutocompletar(getRaiz()->getMeio(),palavra,1,novapalavra);
+            }
         }
         else if(getRaiz()->getInfo()>palavra[0])
         {
@@ -213,7 +310,8 @@ void ArvTST::auxAutocompletar(NoTST* no, string palavra, int i,string novapalavr
         {
             if(i == palavra.size()-1)
             {
-                imprimeAutocompletar(no, novapalavra);
+                novapalavra.push_back(no->getInfo());
+                imprimeAutocompletar(no->getMeio(), novapalavra);
             }
             else
             {
@@ -225,7 +323,14 @@ void ArvTST::auxAutocompletar(NoTST* no, string palavra, int i,string novapalavr
         {
             if(i == palavra.size()-1)
             {
-                imprimeAutocompletar(no, novapalavra);
+                if(no->getEsq()!=NULL)
+                {
+                    auxAutocompletar(no->getEsq(),palavra,i, novapalavra);
+                }
+                else
+                {
+                    imprimeAutocompletar(no, novapalavra);
+                }
             }
             else
             {
@@ -236,7 +341,14 @@ void ArvTST::auxAutocompletar(NoTST* no, string palavra, int i,string novapalavr
         {
             if(i == palavra.size()-1)
             {
-                imprimeAutocompletar(no, novapalavra);
+                if(no->getEsq()!=NULL)
+                {
+                    auxAutocompletar(no->getDir(),palavra,i, novapalavra);
+                }
+                else
+                {
+                    imprimeAutocompletar(no, novapalavra);
+                }
             }
             else
             {
@@ -257,7 +369,13 @@ void ArvTST::imprimeAutocompletar(NoTST* no, string novapalavra)
         {
             cout << novapalavra << ", ";
         }
-        imprimeAutocompletar(no->getDir(), novapalavra);
         novapalavra.erase(novapalavra.end()-1);
+        imprimeAutocompletar(no->getDir(), novapalavra);
     }
+}
+
+void ArvTST::imprimir()
+{
+    string nova;
+    imprimeAutocompletar(getRaiz(),nova);
 }

@@ -15,9 +15,11 @@ public:
     void insere(string palavra);
     bool busca(string palavra);
     void autocompletar(string palavra);
+    void imprimir();
 private:
     NoTST* raiz;
     void auxInsere(NoTST* no, string palavra, int i);
+    void auxInsere2(NoTST* no, string palavra, int i);
     bool auxBusca(NoTST* no, string palavra,int i);
     void auxAutocompletar(NoTST* no, string palavra, int i, string novapalavra);
     void imprimeAutocompletar(NoTST* no, string novapalavra);

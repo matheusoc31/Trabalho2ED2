@@ -6,7 +6,7 @@
 	<cstring>
 	<sstream>
 
-1543795195 
+1543900979 
 
 1543094234 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\trietst\include\tst.h
 	"NoTST.h"
@@ -116,22 +116,71 @@
 	<cstring>
 	<sstream>
 
-1543868319 source:/ice/Downloads/TrieTST/main.cpp
+1543948987 source:/ice/Downloads/TrieTST/main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
 	<iostream>
 	<string.h>
 	<stdio.h>
 	<ArvTST.h>
 
-1543867799 /ice/Downloads/TrieTST/include/ArvTST.h
+1543944231 /ice/Downloads/TrieTST/include/ArvTST.h
+	<iostream>
+	"NoTST.h"
 	<iostream>
 	"NoTST.h"
 
-1543826298 /ice/Downloads/TrieTST/include/NoTST.h
+1543914828 /ice/Downloads/TrieTST/include/NoTST.h
 
-1543868258 source:/ice/Downloads/TrieTST/src/ArvTST.cpp
+1543949403 source:/ice/Downloads/TrieTST/src/ArvTST.cpp
 	"ArvTST.h"
 	<iostream>
 	<cstdlib>
 	<cstring>
 	<sstream>
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543900979 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\nova pasta\trietst\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
+
+1543900817 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\nova pasta\trietst\include\arvtst.h
+	<iostream>
+	"NoTST.h"
+
+1543850378 c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\nova pasta\trietst\include\notst.h
+
+1543900946 source:c:\users\user\downloads\estudos\engenharia computacional\6º período\estrutura de dados ii\nova pasta\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543952858 source:c:\users\ufjf\downloads\trietst\src\arvtst.cpp
+	"ArvTST.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<sstream>
+
+1543931516 c:\users\ufjf\downloads\trietst\include\arvtst.h
+	<iostream>
+	"NoTST.h"
+
+1543931514 c:\users\ufjf\downloads\trietst\include\notst.h
+
+1543952547 source:c:\users\ufjf\downloads\trietst\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<ArvTST.h>
 
